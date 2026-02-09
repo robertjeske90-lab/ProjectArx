@@ -1,0 +1,3686 @@
+{
+  "version": "0.1.0",
+  "attributes": {
+    "koerper": {
+      "name": "Körper",
+      "origin": "Core",
+      "description": "Körper ist ein indikator wieviel Rohe Kraft jemand umsetzen kann, über einen gewissen Zeitraum.",
+      "typ": "Physisch",
+      "art": "Aktiv",
+      "baseValue": 10,
+      "upsPerLevel": 1,
+      "maxLevel": 15,
+      "expMod": 25,
+      "gravitas": 1.0
+    },
+    "geschick": {
+      "name": "Geschick",
+      "origin": "Core",
+      "description": "Geschick ist ein indikator für die kinästhetische Fähigkeit und Beweglichkeit.",
+      "typ": "Physisch",
+      "art": "Finesse",
+      "baseValue": 10,
+      "upsPerLevel": 1,
+      "maxLevel": 15,
+      "expMod": 25,
+      "gravitas": 1.0
+    },
+    "konstitution": {
+      "name": "Konstitution",
+      "origin": "Core",
+      "description": "Konstitution ist die Gesundheitliche Robustheit und Zähigkeit. Wie schnell überwindet man Krankheiten, wie gut widersteht man vergiftungen...",
+      "typ": "Physisch",
+      "art": "Passiv",
+      "baseValue": 10,
+      "upsPerLevel": 1,
+      "maxLevel": 15,
+      "expMod": 25,
+      "gravitas": 1.0
+    },
+    "geist": {
+      "name": "Geist",
+      "origin": "Core",
+      "description": "Geist bezwichnet Intelligenz und Weißheit. Erinnerung und die möglichkeit Schlüsse zu ziehen.",
+      "typ": "Mental",
+      "art": "Aktiv",
+      "baseValue": 10,
+      "upsPerLevel": 1,
+      "maxLevel": 15,
+      "expMod": 25,
+      "gravitas": 1.0
+    },
+    "wahrnehmung": {
+      "name": "Wahrnehmung",
+      "origin": "Core",
+      "description": "Sinneseindrücke verarbeiten.",
+      "typ": "mental",
+      "art": "Finesse",
+      "baseValue": 10,
+      "upsPerLevel": 1,
+      "maxLevel": 15,
+      "expMod": 25,
+      "gravitas": 1.0
+    },
+    "psyche": {
+      "name": "Psyche",
+      "origin": "Core",
+      "description": "Wie gut kann man schrecken Widerstehen.",
+      "typ": "mental",
+      "art": "Passiv",
+      "baseValue": 10,
+      "upsPerLevel": 1,
+      "maxLevel": 15,
+      "expMod": 25,
+      "gravitas": 1.0
+    },
+    "charisma": {
+      "name": "Charisma",
+      "origin": "Core",
+      "description": "Die Eigenschaft leute in den Bann zu ziehen, und zu überreden.",
+      "typ": "Sozial",
+      "art": "Aktiv",
+      "baseValue": 10,
+      "upsPerLevel": 1,
+      "maxLevel": 15,
+      "expMod": 25,
+      "gravitas": 1.0
+    },
+    "intuition": {
+      "name": "Intuition",
+      "origin": "Core",
+      "description": "Die fähigkeit grob Leute einzuschätzen. \"Welche Masche zieht hier?\" \"Lügt er?\" Solche fragen kann Intuition helfen zu beantworten",
+      "typ": "Sozial",
+      "art": "Finesse",
+      "baseValue": 10,
+      "upsPerLevel": 1,
+      "maxLevel": 15,
+      "expMod": 25,
+      "gravitas": 1.0
+    },
+    "fassade": {
+      "name": "Fassade",
+      "origin": "Core",
+      "description": "Die Fähigkeit seine eigene Intention zu verbergen",
+      "typ": "Sozial",
+      "art": "Passiv",
+      "baseValue": 10,
+      "upsPerLevel": 1,
+      "maxLevel": 15,
+      "expMod": 25,
+      "gravitas": 1.0
+    },
+    "elementar": {
+      "name": "Elementar",
+      "origin": "Core_Magic",
+      "description": "Die fähigkeit verschiedene Elementar Fähigkeiten zu bündeln und Kombinieren",
+      "typ": "Schule",
+      "art": "",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 16,
+      "expMod": 25,
+      "gravitas": 1.0
+    },
+    "hitze": {
+      "name": "Hitze",
+      "origin": "Core_Magic",
+      "description": "Eisige Kälte oder Brennende Hitze?",
+      "typ": "Elementar",
+      "art": "",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 8,
+      "expMod": 25,
+      "gravitas": 1.0
+    },
+    "fluss": {
+      "name": "Fluss",
+      "origin": "Core_Magic",
+      "description": "Dürre oder Flut?",
+      "typ": "Elementar",
+      "art": "",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 8,
+      "expMod": 25,
+      "gravitas": 1.0
+    },
+    "materie": {
+      "name": "Materie",
+      "origin": "Core_Magic",
+      "description": "Luft oder Fest",
+      "typ": "Elementar",
+      "art": "",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 8,
+      "expMod": 25,
+      "gravitas": 1.0
+    },
+    "strom": {
+      "name": "Strom",
+      "origin": "Core_Magic",
+      "description": "Stillstehend oder in stümischer bewegung",
+      "typ": "Elementar",
+      "art": "",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 8,
+      "expMod": 25,
+      "gravitas": 1.0
+    },
+    "mental": {
+      "name": "Mental",
+      "origin": "Core_Magic",
+      "description": "Die fähigkeit verschiedene Mental Fähigkeiten zu bündeln und Kombinieren",
+      "typ": "Schule",
+      "art": "",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 16,
+      "expMod": 25,
+      "gravitas": 1.0
+    },
+    "entropie": {
+      "name": "Entropie",
+      "origin": "Core_Magic",
+      "description": "Entzug oder Ladung",
+      "typ": "Mental",
+      "art": "",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 8,
+      "expMod": 25,
+      "gravitas": 1.0
+    },
+    "arkan": {
+      "name": "Arkan",
+      "origin": "Core_Magic",
+      "description": "Die Lenkung von Arkanen strömen",
+      "typ": "Mental",
+      "art": "",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 8,
+      "expMod": 25,
+      "gravitas": 1.0
+    },
+    "illusion": {
+      "name": "Illusion",
+      "origin": "Core_Magic",
+      "description": "Erschaffen von Trugbildern oder Geräuschen",
+      "typ": "Mental",
+      "art": "",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 8,
+      "expMod": 25,
+      "gravitas": 1.0
+    },
+    "beherrschung": {
+      "name": "Beherrschung",
+      "origin": "Core_Magic",
+      "description": "Das Beherrschen verschiedener Entitäten, das beeinflussen des Geistes",
+      "typ": "Mental",
+      "art": "",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 8,
+      "expMod": 25,
+      "gravitas": 1.0
+    },
+    "anrufung": {
+      "name": "Anrufung",
+      "origin": "Core_Magic",
+      "description": "Bitte Höhere wesen (in der regel einen Gott) Magische effekte zu schaffen",
+      "typ": "Schule",
+      "art": "",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 16,
+      "expMod": 25,
+      "gravitas": 1.0
+    },
+    "leben": {
+      "name": "Leben",
+      "origin": "Core_Magic",
+      "description": "Beeinflusse das Pendel zwischen Leben und Tod",
+      "typ": "Anrufung",
+      "art": "",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 8,
+      "expMod": 25,
+      "gravitas": 1.0
+    },
+    "segen": {
+      "name": "Segen",
+      "origin": "Core_Magic",
+      "description": "Segen oder Flüche",
+      "typ": "Anrufung",
+      "art": "",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 8,
+      "expMod": 25,
+      "gravitas": 1.0
+    },
+    "erkenntnis": {
+      "name": "Erkenntnis",
+      "origin": "Core_Magic",
+      "description": "Lesen von Gedanken, beschaffen von Wissen auf magischem wege, Hellsicht ",
+      "typ": "Anrufung",
+      "art": "",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 8,
+      "expMod": 25,
+      "gravitas": 1.0
+    },
+    "rufen": {
+      "name": "Rufen",
+      "origin": "Core_Magic",
+      "description": "Rufen und Bannen verschiedener Wesen.",
+      "typ": "Anrufung",
+      "art": "",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 8,
+      "expMod": 25,
+      "gravitas": 1.0
+    }
+  },
+  "vitals": {
+    "lebenspunkte": {
+      "name": "Lebenspunkte",
+      "origin": "Core",
+      "description": "Wie weit ist der Charakter vom Tod entfernt",
+      "typ": "Physisch",
+      "baseValue": 100,
+      "upsPerLevel": 10,
+      "maxLevel": 15,
+      "expMod": 25,
+      "gravitas": 1.0
+    },
+    "gesundheitspunkte": {
+      "name": "Gesundheitspunkte",
+      "origin": "Core_Survival",
+      "description": "Wie Gesund ist der Charakter.",
+      "typ": "Physisch",
+      "baseValue": 100,
+      "upsPerLevel": 10,
+      "maxLevel": 15,
+      "expMod": 25,
+      "gravitas": 1.0
+    },
+    "frische": {
+      "name": "Frische",
+      "origin": "Core_Survival",
+      "description": "Wie Wach ist der Charakter",
+      "typ": "Mental",
+      "baseValue": 100,
+      "upsPerLevel": 10,
+      "maxLevel": 15,
+      "expMod": 25,
+      "gravitas": 1.0
+    },
+    "geistige_gesundheit": {
+      "name": "Geistige Gesundheit",
+      "origin": "Core",
+      "description": "Wie weit ist der Charakter vom Wahnsinn durch Schrecken entfernt",
+      "typ": "Mental",
+      "baseValue": 100,
+      "upsPerLevel": 10,
+      "maxLevel": 15,
+      "expMod": 25,
+      "gravitas": 1.0
+    },
+    "hunger": {
+      "name": "Hunger",
+      "origin": "Core_Survival",
+      "description": "Wie weit ist der Charakter vom Verhungern entfernt",
+      "typ": "Survival",
+      "baseValue": 100,
+      "upsPerLevel": 10,
+      "maxLevel": 15,
+      "expMod": 25,
+      "gravitas": 0.0
+    },
+    "durst": {
+      "name": "Durst",
+      "origin": "Core_Survival",
+      "description": "WIe viel durst hat der Charakter",
+      "typ": "Survival",
+      "baseValue": 100,
+      "upsPerLevel": 10,
+      "maxLevel": 15,
+      "expMod": 25,
+      "gravitas": 0.0
+    },
+    "moral": {
+      "name": "Moral",
+      "origin": "Core",
+      "description": "Zwischen heldenhaft-mutig und ängstlich",
+      "typ": "Sozial",
+      "baseValue": 100,
+      "upsPerLevel": 10,
+      "maxLevel": 15,
+      "expMod": 25,
+      "gravitas": 0.5
+    }
+  },
+  "resources": {
+    "ausdauerakt": {
+      "name": "Ausdauerakt",
+      "origin": "Core",
+      "description": "Eine Kurzfristige Kraftanstrengung",
+      "typ": "Physisch",
+      "baseValue": 1,
+      "upsPerLevel": 1,
+      "maxLevel": 4,
+      "expMod": 100,
+      "gravitas": 1.0
+    },
+    "fokus": {
+      "name": "Fokus",
+      "origin": "Core",
+      "description": "Ein Kurzer moment enormer Geistiger Anstrengung",
+      "typ": "Mental",
+      "baseValue": 1,
+      "upsPerLevel": 1,
+      "maxLevel": 4,
+      "expMod": 100,
+      "gravitas": 1.0
+    },
+    "inbrunst": {
+      "name": "Inbrunst",
+      "origin": "Core",
+      "description": "Kurzer Moment indem man mit 120% Reden halten kann.",
+      "typ": "Sozial",
+      "baseValue": 1,
+      "upsPerLevel": 1,
+      "maxLevel": 4,
+      "expMod": 100,
+      "gravitas": 1.0
+    },
+    "glueck": {
+      "name": "Glück",
+      "origin": "Core",
+      "description": "Glück gehabt? Schicksal?",
+      "typ": "Allgemein",
+      "baseValue": 1,
+      "upsPerLevel": 1,
+      "maxLevel": 4,
+      "expMod": 100,
+      "gravitas": 1.0
+    }
+  },
+  "skills": {
+    "basiskampf": {
+      "name": "Basiskampf",
+      "origin": "Core",
+      "bereich": "Nahkampf",
+      "tier": 1,
+      "tierGruppe": "Basis",
+      "description": "Grundlegende Nahkampferfahrung: Haltung, Distanz, einfache Angriffe/Verteidigung.",
+      "parent": null,
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 5,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "einhandwaffen": {
+      "name": "Einhandwaffen",
+      "origin": "Core",
+      "bereich": "Nahkampf",
+      "tier": 2,
+      "tierGruppe": "Führung",
+      "description": "Grundlegender Kampf mit einhändig geführten Waffen.",
+      "parent": "Basiskampf",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "zweihandwaffen": {
+      "name": "Zweihandwaffen",
+      "origin": "Core",
+      "bereich": "Nahkampf",
+      "tier": 2,
+      "tierGruppe": "Führung",
+      "description": "Grundlegender Kampf mit zweihändig geführten Waffen.",
+      "parent": "Basiskampf",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "hybridwaffen": {
+      "name": "Hybridwaffen",
+      "origin": "Core",
+      "bereich": "Nahkampf",
+      "tier": 2,
+      "tierGruppe": "Führung",
+      "description": "Waffen, die ein- oder zweihändig geführt werden können; Umschalten je nach Situation.",
+      "parent": "Basiskampf",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "unbewaffnet": {
+      "name": "Unbewaffnet",
+      "origin": "Core",
+      "bereich": "Nahkampf",
+      "tier": 2,
+      "tierGruppe": "Führung",
+      "description": "Kampf ohne Waffen: Schläge, Tritte, Clinch, einfache Würfe/Griffe/Entkommen.",
+      "parent": "Basiskampf",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "exotische_waffen": {
+      "name": "Exotische Waffen",
+      "origin": "Core",
+      "bereich": "Nahkampf",
+      "tier": 2,
+      "tierGruppe": "Führung",
+      "description": "Ungewöhnliche Waffenformen mit Sonderhandling/Manövern.",
+      "parent": "Basiskampf",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "einhandklingen": {
+      "name": "Einhandklingen",
+      "origin": "Core",
+      "bereich": "Nahkampf",
+      "tier": 3,
+      "tierGruppe": "Familie",
+      "description": "Schneid-/Hiebklingen einhändig: Schnittführung, Bindungen.",
+      "parent": "Einhandwaffen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "einhandstichwaffen": {
+      "name": "Einhandstichwaffen",
+      "origin": "Core",
+      "bereich": "Nahkampf",
+      "tier": 3,
+      "tierGruppe": "Familie",
+      "description": "Stichdominante Einhandwaffen: Linien, Öffnungen, Riposten.",
+      "parent": "Einhandwaffen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "einhandkolben": {
+      "name": "Einhandkolben",
+      "origin": "Core",
+      "bereich": "Nahkampf",
+      "tier": 3,
+      "tierGruppe": "Familie",
+      "description": "Schlag-/Wuchtwaffen einhändig: Wuchtfenster, Kontrolle, gut gegen Rüstung.",
+      "parent": "Einhandwaffen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "zweihandklingen": {
+      "name": "Zweihandklingen",
+      "origin": "Core",
+      "bereich": "Nahkampf",
+      "tier": 3,
+      "tierGruppe": "Familie",
+      "description": "Zweihändige Klingen: Raumkontrolle, Druckspiel.",
+      "parent": "Zweihandwaffen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "stangenwaffen": {
+      "name": "Stangenwaffen",
+      "origin": "Core",
+      "bereich": "Nahkampf",
+      "tier": 3,
+      "tierGruppe": "Familie",
+      "description": "Polearms: Reichweitenkontrolle, Haken, Distanzmanagement.",
+      "parent": "Zweihandwaffen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "zweihandkolben": {
+      "name": "Zweihandkolben",
+      "origin": "Core",
+      "bereich": "Nahkampf",
+      "tier": 3,
+      "tierGruppe": "Familie",
+      "description": "Zweihändige Wuchtwaffen: maximale Wucht, Trägheit managen.",
+      "parent": "Zweihandwaffen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "hybridklingen": {
+      "name": "Hybridklingen",
+      "origin": "Core",
+      "bereich": "Nahkampf",
+      "tier": 3,
+      "tierGruppe": "Familie",
+      "description": "Hybrid-Klingen (1H/2H): Tempo vs. Druck wechseln.",
+      "parent": "Hybridwaffen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "hybridstich": {
+      "name": "Hybridstich",
+      "origin": "Core",
+      "bereich": "Nahkampf",
+      "tier": 3,
+      "tierGruppe": "Familie",
+      "description": "Hybrid-Stichwaffen: Distanz halten, schnelle Stiche, Richtungswechsel.",
+      "parent": "Hybridwaffen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "unbewaffnete_kampfstile": {
+      "name": "Unbewaffnete Kampfstile",
+      "origin": "Core",
+      "bereich": "Nahkampf",
+      "tier": 3,
+      "tierGruppe": "Stile",
+      "description": "Oberkategorie für waffenlose Stilrichtungen (Boxen, Ringen usw.).",
+      "parent": "Unbewaffnet",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "boxen": {
+      "name": "Boxen",
+      "origin": "Core",
+      "bereich": "Nahkampf",
+      "tier": 4,
+      "tierGruppe": "Stil",
+      "description": "Hände/Footwork: Jabs, Cross, Hooks, Kopfbewegung, Reichweitenarbeit.",
+      "parent": "Unbewaffnete Kampfstile",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "kickboxen": {
+      "name": "Kickboxen",
+      "origin": "Core",
+      "bereich": "Nahkampf",
+      "tier": 4,
+      "tierGruppe": "Stil",
+      "description": "Boxen + Kicks: Distanzwechsel, Timing, Low/Body/High-Kicks.",
+      "parent": "Unbewaffnete Kampfstile",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "ringen": {
+      "name": "Ringen",
+      "origin": "Core",
+      "bereich": "Nahkampf",
+      "tier": 4,
+      "tierGruppe": "Stil",
+      "description": "Clinch, Takedowns, Würfe, Kontrolle am Boden/Stand.",
+      "parent": "Unbewaffnete Kampfstile",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "kampfkunst_asiatische_stile": {
+      "name": "Kampfkunst (asiatische Stile)",
+      "origin": "Core",
+      "bereich": "Nahkampf",
+      "tier": 4,
+      "tierGruppe": "Stil",
+      "description": "Oberbegriff: Karate/TKD/Kung Fu etc.; Kicks, Timing, Disziplin.",
+      "parent": "Unbewaffnete Kampfstile",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "waffenloser_straßenkampf": {
+      "name": "Waffenloser Straßenkampf",
+      "origin": "Core",
+      "bereich": "Nahkampf",
+      "tier": 4,
+      "tierGruppe": "Stil",
+      "description": "Unsauber, aggressiv, improvisiert: Druck, Unterbrechungen, schnelle Entscheidungen.",
+      "parent": "Unbewaffnete Kampfstile",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "kurzschwerter": {
+      "name": "Kurzschwerter",
+      "origin": "Core",
+      "bereich": "Nahkampf",
+      "tier": 4,
+      "tierGruppe": "Waffe",
+      "description": "Kurze Klingen: enge Distanz, schnelles Tempo.",
+      "parent": "Einhandklingen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "langschwerter": {
+      "name": "Langschwerter",
+      "origin": "Core",
+      "bereich": "Nahkampf",
+      "tier": 4,
+      "tierGruppe": "Waffe",
+      "description": "Längere Klingen: Distanzspiel, Bindungen, Linienkontrolle.",
+      "parent": "Einhandklingen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "saebel": {
+      "name": "Säbel",
+      "origin": "Core",
+      "bereich": "Nahkampf",
+      "tier": 4,
+      "tierGruppe": "Waffe",
+      "description": "Schnittdominant: mobile Fußarbeit, Ziehschnitte.",
+      "parent": "Einhandklingen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "duellwaffen": {
+      "name": "Duellwaffen",
+      "origin": "Core",
+      "bereich": "Nahkampf",
+      "tier": 4,
+      "tierGruppe": "Waffe",
+      "description": "Fechtlastig (Rapier-Style): Präzision, Paraden, Riposten.",
+      "parent": "Einhandstichwaffen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "dolche_kampfmesser": {
+      "name": "Dolche/Kampfmesser",
+      "origin": "Core",
+      "bereich": "Nahkampf",
+      "tier": 4,
+      "tierGruppe": "Waffe",
+      "description": "Sehr kurze Klingen: Engdistanz, schnelle Stiche, Lücken finden.",
+      "parent": "Einhandklingen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "anderthalbhaender": {
+      "name": "Anderthalbhänder",
+      "origin": "Core",
+      "bereich": "Nahkampf",
+      "tier": 4,
+      "tierGruppe": "Waffe",
+      "description": "Bastardsword: 1H flexibel, 2H Druck/Reichweite; Umschalten.",
+      "parent": "Hybridwaffen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "zweihaender": {
+      "name": "Zweihänder",
+      "origin": "Core",
+      "bereich": "Nahkampf",
+      "tier": 4,
+      "tierGruppe": "Waffe",
+      "description": "Großschwert: Raumkontrolle, weite Hiebe, Druckspiel.",
+      "parent": "Zweihandwaffen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "kurzspeer": {
+      "name": "Kurzspeer",
+      "origin": "Core",
+      "bereich": "Nahkampf",
+      "tier": 4,
+      "tierGruppe": "Waffe",
+      "description": "1H/2H: Distanz halten, schnelle Stiche, Anti-Rush.",
+      "parent": "Hybridwaffen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "kampfstab": {
+      "name": "Kampfstab",
+      "origin": "Core",
+      "bereich": "Nahkampf",
+      "tier": 4,
+      "tierGruppe": "Waffe",
+      "description": "Stab: Kontrolle, Hebel, schnelle Wechsel, ohne Schneide.",
+      "parent": "Hybridwaffen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "knueppel": {
+      "name": "Knüppel",
+      "origin": "Core",
+      "bereich": "Nahkampf",
+      "tier": 4,
+      "tierGruppe": "Waffe",
+      "description": "Einfache Wuchtwaffe: robust, improvisationsnah.",
+      "parent": "Einhandkolben",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "streitkolben": {
+      "name": "Streitkolben",
+      "origin": "Core",
+      "bereich": "Nahkampf",
+      "tier": 4,
+      "tierGruppe": "Waffe",
+      "description": "Wucht gegen Rüstung: Schock, Guard brechen.",
+      "parent": "Einhandkolben",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "kriegshaemmer": {
+      "name": "Kriegshämmer",
+      "origin": "Core",
+      "bereich": "Nahkampf",
+      "tier": 4,
+      "tierGruppe": "Waffe",
+      "description": "Punkt/Wucht: Durchschlag, Haken möglich.",
+      "parent": "Einhandkolben",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "schockwaffen": {
+      "name": "Schockwaffen",
+      "origin": "Core",
+      "bereich": "Nahkampf",
+      "tier": 4,
+      "tierGruppe": "Waffe",
+      "description": "Stoppende Wirkung: Kontrolle/Disruption.",
+      "parent": "Einhandkolben",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "zweihandaxt": {
+      "name": "Zweihandaxt",
+      "origin": "Core",
+      "bereich": "Nahkampf",
+      "tier": 4,
+      "tierGruppe": "Waffe",
+      "description": "Sehr hohe Wucht, klare Wind-ups.",
+      "parent": "Zweihandklingen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "schwertstab": {
+      "name": "Schwertstab",
+      "origin": "Core",
+      "bereich": "Nahkampf",
+      "tier": 4,
+      "tierGruppe": "Waffe",
+      "description": "Polearm mit Klinge: Reichweite + Schnitt.",
+      "parent": "Stangenwaffen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "polehammer": {
+      "name": "Polehammer",
+      "origin": "Core",
+      "bereich": "Nahkampf",
+      "tier": 4,
+      "tierGruppe": "Waffe",
+      "description": "Polearm mit Hammer: Anti-Rüstung, Haken/ziehen.",
+      "parent": "Stangenwaffen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "poleaxe": {
+      "name": "Poleaxe",
+      "origin": "Core",
+      "bereich": "Nahkampf",
+      "tier": 4,
+      "tierGruppe": "Waffe",
+      "description": "Vielzweck: Axt/Hammer/Spitze je nach Situation.",
+      "parent": "Stangenwaffen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "hellebarde": {
+      "name": "Hellebarde",
+      "origin": "Core",
+      "bereich": "Nahkampf",
+      "tier": 4,
+      "tierGruppe": "Waffe",
+      "description": "Axt + Haken + Spitze: Raumkontrolle, Ziehen/Umwerfen.",
+      "parent": "Stangenwaffen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "sense": {
+      "name": "Sense",
+      "origin": "Core",
+      "bereich": "Nahkampf",
+      "tier": 4,
+      "tierGruppe": "Waffe",
+      "description": "Lange Klinge an Stange: starke Bögen, schwächer in Engdistanz.",
+      "parent": "Zweihandklingen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "einhandaexte": {
+      "name": "Einhandäxte",
+      "origin": "Core",
+      "bereich": "Nahkampf",
+      "tier": 4,
+      "tierGruppe": "Waffe",
+      "description": "Kurze harte Hiebe, gut mit Schild kombinierbar.",
+      "parent": "Einhandklingen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "klauenwaffen": {
+      "name": "Klauenwaffen",
+      "origin": "Core",
+      "bereich": "Nahkampf",
+      "tier": 3,
+      "tierGruppe": "Exotisch-Typ",
+      "description": "Sehr kurze Waffenhände: reißende Treffer, Engdistanz, Pressing.",
+      "parent": "Exotische Waffen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 15,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "peitschen_kettenwaffen": {
+      "name": "Peitschen/Kettenwaffen",
+      "origin": "Core",
+      "bereich": "Nahkampf",
+      "tier": 3,
+      "tierGruppe": "Exotisch-Typ",
+      "description": "Reichweite, Umgehen von Guards: Einwickeln, Entwaffnen, riskant.",
+      "parent": "Exotische Waffen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 15,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "gunblades": {
+      "name": "Gunblades",
+      "origin": "Core",
+      "bereich": "Nahkampf",
+      "tier": 3,
+      "tierGruppe": "Exotisch-Typ",
+      "description": "Hybrid aus Klinge + Schussimpuls (settingabhängig): Timing/Handling, flexibel aber riskant.",
+      "parent": "Exotische Waffen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 15,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "doppelklingen_doppelwaffen": {
+      "name": "Doppelklingen/Doppelwaffen",
+      "origin": "Core",
+      "bereich": "Nahkampf",
+      "tier": 3,
+      "tierGruppe": "Exotisch-Typ",
+      "description": "Flow/Rhythmus, hoher Skill-Anspruch, Fehler werden hart bestraft.",
+      "parent": "Exotische Waffen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 15,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "tonfa_schlagstoecke_spezial": {
+      "name": "Tonfa/Schlagstöcke (Spezial)",
+      "origin": "Core",
+      "bereich": "Nahkampf",
+      "tier": 3,
+      "tierGruppe": "Exotisch-Typ",
+      "description": "Hebel/Block/Schlag-Kombi; defensiv-offensiv wechselnd.",
+      "parent": "Exotische Waffen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 15,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "basisfernkampf": {
+      "name": "BasisFernkampf",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 1,
+      "tierGruppe": "Basis",
+      "description": "Grundlegende Fernkampferfahrung: Zielen, Entfernung, Deckung, Timing, Ballistik-Grundgefühl.",
+      "parent": null,
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 5,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "einhand_fernkampf": {
+      "name": "Einhand-Fernkampf",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 2,
+      "tierGruppe": "Führung",
+      "description": "Einhändig nutzbare Systeme (Werfen, Pistolen, Handarmbrüste…).",
+      "parent": "BasisFernkampf",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "beidhand_fernkampf": {
+      "name": "Beidhand-Fernkampf",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 2,
+      "tierGruppe": "Führung",
+      "description": "Schulter-/beidhändig geführte Systeme (Bögen, Langwaffen, schwere Werfer…).",
+      "parent": "BasisFernkampf",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "stationaerer_fernkampf": {
+      "name": "Stationärer-Fernkampf",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 2,
+      "tierGruppe": "Führung",
+      "description": "Aufgestellt/crew: Einrichten, Richten, Ladesequenzen, Feuerleitung.",
+      "parent": "BasisFernkampf",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "einhand_wurfwaffen": {
+      "name": "Einhand-Wurfwaffen",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 3,
+      "tierGruppe": "Familie",
+      "description": "Werfen 1H: Abwurf, Rotation, Distanzgefühl.",
+      "parent": "Einhand-Fernkampf",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "einhand_schleudern": {
+      "name": "Einhand-Schleudern",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 3,
+      "tierGruppe": "Familie",
+      "description": "Handschleuder: Rotationskontrolle, kurvige Flugbahn.",
+      "parent": "Einhand-Fernkampf",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "einhand_armbrueste": {
+      "name": "Einhand-Armbrüste",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 3,
+      "tierGruppe": "Familie",
+      "description": "Pistolen-/Handarmbrüste: kompakt, schnell, geringere Leistung.",
+      "parent": "Einhand-Fernkampf",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "einhand_feuerwaffen": {
+      "name": "Einhand-Feuerwaffen",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 3,
+      "tierGruppe": "Familie",
+      "description": "Pistolen: Rückstoß, Ziehen, Reload, Störungen.",
+      "parent": "Einhand-Fernkampf",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "beidhand_wurfwaffen": {
+      "name": "Beidhand-Wurfwaffen",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 3,
+      "tierGruppe": "Familie",
+      "description": "Beidhändiges Werfen (z.B. Speer/Javelin): Anlauf/Anziehen, Kraftübertrag, Distanz.",
+      "parent": "Beidhand-Fernkampf",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "beidhand_schleudern": {
+      "name": "Beidhand-Schleudern",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 3,
+      "tierGruppe": "Familie",
+      "description": "Stabschleuder/Staff Sling: Hebel für Reichweite/Wucht, langsameres Handling.",
+      "parent": "Beidhand-Fernkampf",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "beidhand_boegen": {
+      "name": "Beidhand-Bögen",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 3,
+      "tierGruppe": "Familie",
+      "description": "Bogenführung: Ankern, Release, Zuggewicht, Stand.",
+      "parent": "Beidhand-Fernkampf",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "beidhand_armbrueste": {
+      "name": "Beidhand-Armbrüste",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 3,
+      "tierGruppe": "Familie",
+      "description": "Schulterarmbrüste/Gewehrarmbrüste: Spannen, Auflage, Optiken.",
+      "parent": "Beidhand-Fernkampf",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "beidhand_feuerwaffen": {
+      "name": "Beidhand-Feuerwaffen",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 3,
+      "tierGruppe": "Familie",
+      "description": "Langwaffen: Anschlag, Rückstoßkontrolle, Serien/Präzision.",
+      "parent": "Beidhand-Fernkampf",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "beidhand_schwere_werfer": {
+      "name": "Beidhand-Schwere Werfer",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 3,
+      "tierGruppe": "Familie",
+      "description": "Einmann-schultergeführte Werfer: Positionierung, Sicherheitszonen, langsame Schussfolge.",
+      "parent": "Beidhand-Fernkampf",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "stationaere_wurfgeraete": {
+      "name": "Stationäre Wurfgeräte",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 3,
+      "tierGruppe": "Familie",
+      "description": "Ballisten/Katapulte/Trebuchets: Setup, Richten, Spotting.",
+      "parent": "Stationärer-Fernkampf",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "stationaere_geschuetze": {
+      "name": "Stationäre Geschütze",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 3,
+      "tierGruppe": "Familie",
+      "description": "Kanonen/Mörser/Flak: Feuerleitung, Crew-Handling, Sicherheitszonen.",
+      "parent": "Stationärer-Fernkampf",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "stationaere_unterstuetzungswaffen": {
+      "name": "Stationäre Unterstützungswaffen",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 3,
+      "tierGruppe": "Familie",
+      "description": "Lafettierte MGs/aufgestellte Systeme: Sektor halten, Gurt/Überhitzung.",
+      "parent": "Stationärer-Fernkampf",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "wurfmesser_wurfdolche": {
+      "name": "Wurfmesser/Wurfdolche",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Kurzdistanz, präzise, schnell.",
+      "parent": "Einhand-Wurfwaffen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "wurfaexte": {
+      "name": "Wurfäxte",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Rotationswurf, Wucht, timing-sensibel.",
+      "parent": "Einhand-Wurfwaffen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "wurfhaemmer_wurfkeulen": {
+      "name": "Wurfhämmer/Wurfkeulen",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Sehr wuchtig, kurze/mittlere Distanz, träge im Wurf.",
+      "parent": "Einhand-Wurfwaffen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "diskusse_chakram": {
+      "name": "Diskusse/Chakram",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Flache Rotation, spezielle Winkel/Flugbahn.",
+      "parent": "Einhand-Wurfwaffen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "wurfsterne_kleingeschosse": {
+      "name": "Wurfsterne/Kleingeschosse",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Sehr kurz, schnell, oft Utility.",
+      "parent": "Einhand-Wurfwaffen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "handschleuder": {
+      "name": "Handschleuder",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Mobil, große Reichweite möglich, Präzision Übungssache.",
+      "parent": "Einhand-Schleudern",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "stabschleuder_staff_sling": {
+      "name": "Stabschleuder (Staff Sling)",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Mehr Hebel → mehr Reichweite/Wucht, langsamer im Handling.",
+      "parent": "Beidhand-Schleudern",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "pistolenarmbrust_handarmbrust": {
+      "name": "Pistolenarmbrust/Handarmbrust",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Einhand, kompakt, geringe Energie.",
+      "parent": "Einhand-Armbrüste",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "repetier_handarmbrust": {
+      "name": "Repetier-Handarmbrust",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Höhere Kadenz, komplexer/anfälliger.",
+      "parent": "Einhand-Armbrüste",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "javelins_wurfspeere": {
+      "name": "Javelins/Wurfspeere",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Mittlere Distanz, geradere Flugbahn; stark gegen Rush/Formation.",
+      "parent": "Beidhand-Wurfwaffen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "kurz__reiterbogen": {
+      "name": "Kurz-/Reiterbogen",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Kompakt, schnell, gut in Bewegung/engem Gelände.",
+      "parent": "Beidhand-Bögen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "langbogen": {
+      "name": "Langbogen",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Reichweite/Power, braucht Raum/Stand.",
+      "parent": "Beidhand-Bögen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "recurvebogen": {
+      "name": "Recurvebogen",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Allrounder, effizient kompakt.",
+      "parent": "Beidhand-Bögen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "kompositbogen": {
+      "name": "Kompositbogen",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Leistungsstark, setting-abhängig technisch.",
+      "parent": "Beidhand-Bögen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "compoundbogen": {
+      "name": "Compoundbogen",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Modern: Setup wichtig, sehr präzise, Let-off.",
+      "parent": "Beidhand-Bögen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "leichte_armbrust": {
+      "name": "Leichte Armbrust",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Allround, moderates Spannen/Nachladen.",
+      "parent": "Beidhand-Armbrüste",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "schwere_armbrust": {
+      "name": "Schwere Armbrust",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Hohe Durchschlagskraft, langsames Nachladen.",
+      "parent": "Beidhand-Armbrüste",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "repetier__magazinarmbrust": {
+      "name": "Repetier-/Magazinarmbrust",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Mehr Kadenz, komplexer.",
+      "parent": "Beidhand-Armbrüste",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "gewehrarmbrust_bolzen": {
+      "name": "Gewehrarmbrust (Bolzen)",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Schultergeführt, Optiken möglich.",
+      "parent": "Beidhand-Armbrüste",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "kugelschießende_gewehrarmbrust": {
+      "name": "Kugelschießende Gewehrarmbrust",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Projektil statt Bolzen, Spezialhandling.",
+      "parent": "Beidhand-Armbrüste",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "luntenpistole": {
+      "name": "Luntenpistole",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Früh: langsam, wetteranfällig, stark pro Treffer.",
+      "parent": "Einhand-Feuerwaffen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "steinschlosspistole": {
+      "name": "Steinschlosspistole",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Zuverlässiger als Lunte, Reload langsam.",
+      "parent": "Einhand-Feuerwaffen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "revolver": {
+      "name": "Revolver",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Robust, anderer Reload als Magazin.",
+      "parent": "Einhand-Feuerwaffen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "halbautomatische_pistole": {
+      "name": "Halbautomatische Pistole",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Magazin/Schlitten, Störungsdrills.",
+      "parent": "Einhand-Feuerwaffen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "luntengewehr_muskete": {
+      "name": "Luntengewehr/Muskete",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Früh: langsamer Ladezyklus, starke Wirkung.",
+      "parent": "Beidhand-Feuerwaffen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "steinschlossgewehr": {
+      "name": "Steinschlossgewehr",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Zuverlässiger, Reload langsam.",
+      "parent": "Beidhand-Feuerwaffen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "schrotflinte": {
+      "name": "Schrotflinte",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Nah/Mittel, Pattern/Handling entscheidend.",
+      "parent": "Beidhand-Feuerwaffen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "smg_schultergefuehrt": {
+      "name": "SMG (schultergeführt)",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Nah/Mittel, Burst-Kontrolle.",
+      "parent": "Beidhand-Feuerwaffen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "selbstladegewehr_semi": {
+      "name": "Selbstladegewehr (Semi)",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Präzision + schnelle Folgeschüsse.",
+      "parent": "Beidhand-Feuerwaffen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "sturmgewehr_select_fire": {
+      "name": "Sturmgewehr (Select-Fire)",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Burst/Auto-Kontrolle, universell.",
+      "parent": "Beidhand-Feuerwaffen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "bolt_action_gewehr": {
+      "name": "Bolt-Action Gewehr",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Präzision, Schuss–Repetieren–Neuansatz.",
+      "parent": "Beidhand-Feuerwaffen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "dmr_praezisionsgewehr": {
+      "name": "DMR/Präzisionsgewehr",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Distanz/Optik/Atem, sehr präzise.",
+      "parent": "Beidhand-Feuerwaffen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "luftgewehr": {
+      "name": "Luftgewehr",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Leise, andere Ballistik, Utility/Präzision.",
+      "parent": "Beidhand-Feuerwaffen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "rpg_raketenwerfer": {
+      "name": "RPG/Raketenwerfer",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Backblast, Positionierung, langsame Schussfolge, extrem wirkungsvoll.",
+      "parent": "Beidhand-Schwere Werfer",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "einmann_granatwerfer": {
+      "name": "Einmann-Granatwerfer",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Distanzbogen, Mindestentfernung, Flächenwirkung.",
+      "parent": "Beidhand-Schwere Werfer",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "flammenwerfer": {
+      "name": "Flammenwerfer",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Kegel/Zone-Control, Treibstoffmanagement, Risiko nah dran.",
+      "parent": "Beidhand-Schwere Werfer",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "balliste": {
+      "name": "Balliste",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Großer Bolzenwerfer, Crew-Setup.",
+      "parent": "Stationäre Wurfgeräte",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "katapult": {
+      "name": "Katapult",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Indirekt, Parabel, Spotting.",
+      "parent": "Stationäre Wurfgeräte",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "trebuchet": {
+      "name": "Trebuchet",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Sehr große Reichweite/Wucht, sehr langsam.",
+      "parent": "Stationäre Wurfgeräte",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "kanone_geschuetz": {
+      "name": "Kanone/Geschütz",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Laden/Richten/Zünden, Crew/Sicherheit.",
+      "parent": "Stationäre Geschütze",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "moerser": {
+      "name": "Mörser",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Indirekt, Winkel/Charge, Spotter.",
+      "parent": "Stationäre Geschütze",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "flak_abwehrgeschuetz": {
+      "name": "Flak/Abwehrgeschütz",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Vorhalten, schnelle Ziele, Feuerleitung.",
+      "parent": "Stationäre Geschütze",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "schweres_mg_lafette": {
+      "name": "Schweres MG (Lafette)",
+      "origin": "Core",
+      "bereich": "Fernkampf",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Sektorenkontrolle, Gurt/Überhitzung.",
+      "parent": "Stationäre Unterstützungswaffen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "defensive": {
+      "name": "Defensive",
+      "origin": "Core",
+      "bereich": "Defensive",
+      "tier": 1,
+      "tierGruppe": "Basis",
+      "description": "Grundlegende Verteidigung: Stellung, Deckung, Ausweichen, Timing, Schaden reduzieren.",
+      "parent": null,
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "defensivwaffen": {
+      "name": "Defensivwaffen",
+      "origin": "Core",
+      "bereich": "Defensive",
+      "tier": 2,
+      "tierGruppe": "Zweig",
+      "description": "Umgang mit defensiven Ausrüstungen: Blocken, Binden, Parieren, Guard-Wechsel.",
+      "parent": "Defensive",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "ruestungsbeherrschung": {
+      "name": "Rüstungsbeherrschung",
+      "origin": "Core",
+      "bereich": "Defensive",
+      "tier": 2,
+      "tierGruppe": "Zweig",
+      "description": "Rüstung effizient tragen: Bewegung, Ausdauer, Lärm/Handling, Kampfhaltung in Rüstung.",
+      "parent": "Defensive",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "schilde": {
+      "name": "Schilde",
+      "origin": "Core",
+      "bereich": "Defensive",
+      "tier": 3,
+      "tierGruppe": "Familie",
+      "description": "Schildführung: Winkel, Deckung, Schildstoß, Line Closing.",
+      "parent": "Defensivwaffen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "parierwaffen": {
+      "name": "Parierwaffen",
+      "origin": "Core",
+      "bereich": "Defensive",
+      "tier": 3,
+      "tierGruppe": "Familie",
+      "description": "Parieren/Umleiten: Binden, Ablenken, Konterfenster erzeugen.",
+      "parent": "Defensivwaffen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "buckler_faustschild": {
+      "name": "Buckler (Faustschild)",
+      "origin": "Core",
+      "bereich": "Defensive",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Klein, schnell, gut fürs Duell; wenig Flächen-Deckung.",
+      "parent": "Schilde",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "rundschild": {
+      "name": "Rundschild",
+      "origin": "Core",
+      "bereich": "Defensive",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Solide Allround-Deckung, gute Winkelarbeit.",
+      "parent": "Schilde",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "heater_kiteschild": {
+      "name": "Heater/Kiteschild",
+      "origin": "Core",
+      "bereich": "Defensive",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Größer, gute Körperdeckung, etwas träger.",
+      "parent": "Schilde",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "turmschild_pavese": {
+      "name": "Turmschild/Pavese",
+      "origin": "Core",
+      "bereich": "Defensive",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Maximale Deckung, stark stationär/formationstauglich, langsam.",
+      "parent": "Schilde",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "tartsche_duellschild": {
+      "name": "Tartsche (Duellschild)",
+      "origin": "Core",
+      "bereich": "Defensive",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Duellfokus: Guard öffnen/schließen, sehr kontrolliert.",
+      "parent": "Schilde",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "impro_schild": {
+      "name": "Impro-Schild",
+      "origin": "Core",
+      "bereich": "Defensive",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Zweckentfremdet (Deckel, Platte…); situativ.",
+      "parent": "Schilde",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "parierdolch_main_gauche": {
+      "name": "Parierdolch (Main Gauche)",
+      "origin": "Core",
+      "bereich": "Defensive",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Binden/Abfangen, stabiles Konterfenster, Duellfokus.",
+      "parent": "Parierwaffen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "parierstange_parierhaken": {
+      "name": "Parierstange/Parierhaken",
+      "origin": "Core",
+      "bereich": "Defensive",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Aggressives Binden, Entwaffnen/verkanten, Control.",
+      "parent": "Parierwaffen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "parierschwert": {
+      "name": "Parierschwert",
+      "origin": "Core",
+      "bereich": "Defensive",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Offhand-Klinge defensiv geführt, präzise Guard-Arbeit.",
+      "parent": "Parierwaffen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "mantel_umhang_cloak_parry": {
+      "name": "Mantel/Umhang (Cloak-Parry)",
+      "origin": "Core",
+      "bereich": "Defensive",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Einwickeln/Blenden, situativ stark, riskant gegen Wucht.",
+      "parent": "Parierwaffen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "tonfa_defensiv_genutzt": {
+      "name": "Tonfa (defensiv genutzt)",
+      "origin": "Core",
+      "bereich": "Defensive",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Block/Control/Counter in einem, sehr aktive Guard.",
+      "parent": "Parierwaffen",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "leichte_ruestung": {
+      "name": "Leichte Rüstung",
+      "origin": "Core",
+      "bereich": "Defensive",
+      "tier": 3,
+      "tierGruppe": "Klasse",
+      "description": "Beweglich, wenig Einschränkung; gut für Ausweichen/Tempo.",
+      "parent": "Rüstungsbeherrschung",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "mittlere_ruestung": {
+      "name": "Mittlere Rüstung",
+      "origin": "Core",
+      "bereich": "Defensive",
+      "tier": 3,
+      "tierGruppe": "Klasse",
+      "description": "Mix aus Schutz/Beweglichkeit; Standard-Kampfrüstung.",
+      "parent": "Rüstungsbeherrschung",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "schwere_ruestung": {
+      "name": "Schwere Rüstung",
+      "origin": "Core",
+      "bereich": "Defensive",
+      "tier": 3,
+      "tierGruppe": "Klasse",
+      "description": "Maximaler Schutz, Trägheit/Belastung; braucht Technik.",
+      "parent": "Rüstungsbeherrschung",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "power_ruestung": {
+      "name": "Power-Rüstung",
+      "origin": "Core",
+      "bereich": "Defensive",
+      "tier": 3,
+      "tierGruppe": "Klasse",
+      "description": "Servogestützt (Sci-Fi): Systeme, Energie, Stabilisierung; komplex.",
+      "parent": "Rüstungsbeherrschung",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "stoff_gambeson": {
+      "name": "Stoff/Gambeson",
+      "origin": "Core",
+      "bereich": "Defensive",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Gepolstert, mobil, gut gegen leichte Treffer.",
+      "parent": "Leichte Rüstung",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "leder": {
+      "name": "Leder",
+      "origin": "Core",
+      "bereich": "Defensive",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Flexibel, begrenzter Schutz, gut für Stealth/Reisen.",
+      "parent": "Leichte Rüstung",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "verstaerkte_kleidung": {
+      "name": "Verstärkte Kleidung",
+      "origin": "Core",
+      "bereich": "Defensive",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Unauffälliger Schutz (Alltag+).",
+      "parent": "Leichte Rüstung",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "leichte_sci_fi_panzerung": {
+      "name": "Leichte Sci-Fi Panzerung",
+      "origin": "Core",
+      "bereich": "Defensive",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Weiche/verbundartige Schichten, oft modular.",
+      "parent": "Leichte Rüstung",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "schuppen__lamellenruestung": {
+      "name": "Schuppen-/Lamellenrüstung",
+      "origin": "Core",
+      "bereich": "Defensive",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Gute Abdeckung, etwas steif.",
+      "parent": "Mittlere Rüstung",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "kettenhemd": {
+      "name": "Kettenhemd",
+      "origin": "Core",
+      "bereich": "Defensive",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Sehr gut gegen Schnitt; braucht Unterpolster.",
+      "parent": "Mittlere Rüstung",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "brigantine_plattenjacke": {
+      "name": "Brigantine/Plattenjacke",
+      "origin": "Core",
+      "bereich": "Defensive",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Flexible Plattenlösung, solide gegen vieles.",
+      "parent": "Mittlere Rüstung",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "taktische_weste_carrier": {
+      "name": "Taktische Weste/Carrier",
+      "origin": "Core",
+      "bereich": "Defensive",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Modular, Platten/Module, modern.",
+      "parent": "Mittlere Rüstung",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "plattenruestung": {
+      "name": "Plattenrüstung",
+      "origin": "Core",
+      "bereich": "Defensive",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Maximaler Nahkampfschutz, hohe Belastung.",
+      "parent": "Schwere Rüstung",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "vollpanzer_geschlossen": {
+      "name": "Vollpanzer (geschlossen)",
+      "origin": "Core",
+      "bereich": "Defensive",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Top-Schutz, Sicht/Handling eingeschränkt.",
+      "parent": "Schwere Rüstung",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "schwere_verbundpanzerung": {
+      "name": "Schwere Verbundpanzerung",
+      "origin": "Core",
+      "bereich": "Defensive",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Moderne harte Platten/Mehrschicht, sperrig.",
+      "parent": "Schwere Rüstung",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "exo_frame_ohne_power": {
+      "name": "Exo-Frame (ohne Power)",
+      "origin": "Core",
+      "bereich": "Defensive",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Stützgestell ohne volle Servos; hilft Last begrenzt.",
+      "parent": "Schwere Rüstung",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "power_ruestung_leicht_scout": {
+      "name": "Power-Rüstung leicht (Scout)",
+      "origin": "Core",
+      "bereich": "Defensive",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Mobilitätsfokus, Sensorik, weniger Panzerung.",
+      "parent": "Power-Rüstung",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "power_ruestung_standard_assault": {
+      "name": "Power-Rüstung Standard (Assault)",
+      "origin": "Core",
+      "bereich": "Defensive",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Allround: Schutz + Stärke + Systeme.",
+      "parent": "Power-Rüstung",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "power_ruestung_schwer_siege": {
+      "name": "Power-Rüstung schwer (Siege)",
+      "origin": "Core",
+      "bereich": "Defensive",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Max-Schutz/Waffenplattform, langsam/energiehungrig.",
+      "parent": "Power-Rüstung",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "eva_versiegelte_power_ruestung": {
+      "name": "EVA/Versiegelte Power-Rüstung",
+      "origin": "Core",
+      "bereich": "Defensive",
+      "tier": 4,
+      "tierGruppe": "Typ",
+      "description": "Luftdicht, Umwelt-/Weltraumfähig; Systemmanagement wichtig.",
+      "parent": "Power-Rüstung",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "handwerker": {
+      "name": "Handwerker",
+      "origin": "Core",
+      "bereich": "Handwerk",
+      "tier": 1,
+      "tierGruppe": "Basis",
+      "description": "Grundlegende Werkzeuge, Materialkunde, einfache Reparaturen, sauberes Arbeiten.",
+      "parent": null,
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 5,
+      "expMod": 5,
+      "unlocksAt": 5
+    },
+    "metallarbeit": {
+      "name": "Metallarbeit",
+      "origin": "Core",
+      "bereich": "Handwerk",
+      "tier": 2,
+      "tierGruppe": "Lehrling",
+      "description": "Grundlagen Metall bearbeiten: Feilen, Nieten, einfache Teile, Materialverhalten.",
+      "parent": "Handwerker",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 5,
+      "unlocksAt": 5
+    },
+    "bauhandwerk": {
+      "name": "Bauhandwerk",
+      "origin": "Core",
+      "bereich": "Handwerk",
+      "tier": 2,
+      "tierGruppe": "Lehrling",
+      "description": "Grundlagen Bau: Messen, Ausrichten, Stabilität, einfache Konstruktionen/Reparaturen.",
+      "parent": "Handwerker",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 5,
+      "unlocksAt": 5
+    },
+    "holzhandwerk": {
+      "name": "Holzhandwerk",
+      "origin": "Core",
+      "bereich": "Handwerk",
+      "tier": 2,
+      "tierGruppe": "Lehrling",
+      "description": "Grundlagen Holz: Sägen, Hobeln, Verbindungen, Reparaturen, Materialkunde.",
+      "parent": "Handwerker",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 5,
+      "unlocksAt": 5
+    },
+    "kunsthandwerk": {
+      "name": "Kunsthandwerk",
+      "origin": "Core",
+      "bereich": "Handwerk",
+      "tier": 2,
+      "tierGruppe": "Lehrling",
+      "description": "Feinarbeit/Design: saubere Verarbeitung, Details, Ästhetik, kleine Objekte.",
+      "parent": "Handwerker",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 5,
+      "unlocksAt": 5
+    },
+    "tischlerei": {
+      "name": "Tischlerei",
+      "origin": "Core",
+      "bereich": "Handwerk",
+      "tier": 3,
+      "tierGruppe": "Geselle",
+      "description": "Präzise Holzverbindungen, Möbel/Kisten/Türen, stabile Konstruktionen.",
+      "parent": "Holzhandwerk",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 5,
+      "unlocksAt": 5
+    },
+    "bognerei": {
+      "name": "Bognerei",
+      "origin": "Core",
+      "bereich": "Handwerk",
+      "tier": 3,
+      "tierGruppe": "Geselle",
+      "description": "Bögen/Wurfarme, Pfeile/Bolzen (Holzanteil), Tiller/Spannung/Balance.",
+      "parent": "Holzhandwerk",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 5,
+      "unlocksAt": 5
+    },
+    "schmied": {
+      "name": "Schmied",
+      "origin": "Core",
+      "bereich": "Handwerk",
+      "tier": 4,
+      "tierGruppe": "Meister",
+      "description": "Heißarbeit: Formen, Härten/Anlassen-Grundlagen, robuste Metallteile.",
+      "parent": "Metallarbeit",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "schlosser": {
+      "name": "Schlosser",
+      "origin": "Core",
+      "bereich": "Handwerk",
+      "tier": 4,
+      "tierGruppe": "Meister",
+      "description": "Beschläge, Scharniere, Schlösser/Mechanik, präzise Passungen, Reparatur.",
+      "parent": "Metallarbeit",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "waffenschmied": {
+      "name": "Waffenschmied",
+      "origin": "Core",
+      "bereich": "Handwerk",
+      "tier": 4,
+      "tierGruppe": "Meister",
+      "description": "Waffen fertigen/ausbalancieren, Klingenqualität, Reparatur/Tuning.",
+      "parent": "Schmied",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "ruestungsschmied": {
+      "name": "Rüstungsschmied",
+      "origin": "Core",
+      "bereich": "Handwerk",
+      "tier": 4,
+      "tierGruppe": "Meister",
+      "description": "Rüstungsteile, Passform, Gelenke/Nieten, Reparatur schwerer Panzerung.",
+      "parent": "Schmied",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "feinschmied": {
+      "name": "Feinschmied",
+      "origin": "Core",
+      "bereich": "Handwerk",
+      "tier": 4,
+      "tierGruppe": "Meister",
+      "description": "Feinmetall/Schmuck/Gravur, kleine präzise Metallarbeiten.",
+      "parent": "Kunsthandwerk",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "gießerei": {
+      "name": "Gießerei",
+      "origin": "Core",
+      "bereich": "Handwerk",
+      "tier": 3,
+      "tierGruppe": "Geselle",
+      "description": "Formenbau, Metallguss, Legierungen (praktisch), Serien-/Ersatzteile.",
+      "parent": "Metallarbeit",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 5,
+      "unlocksAt": 5
+    },
+    "architektur": {
+      "name": "Architektur",
+      "origin": "Core",
+      "bereich": "Handwerk",
+      "tier": 3,
+      "tierGruppe": "Geselle",
+      "description": "Planung/Statik (praktisch), Baupläne, Bauleitung/Fehlervermeidung.",
+      "parent": "Bauhandwerk",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 5,
+      "unlocksAt": 5
+    },
+    "schiffbau": {
+      "name": "Schiffbau",
+      "origin": "Core",
+      "bereich": "Handwerk",
+      "tier": 3,
+      "tierGruppe": "Geselle",
+      "description": "Rumpf/Spanten, Abdichten, Stabilität auf Wasser, Reparaturen.",
+      "parent": "Bauhandwerk",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 5,
+      "unlocksAt": 5
+    },
+    "fahrzeugbau": {
+      "name": "Fahrzeugbau",
+      "origin": "Core",
+      "bereich": "Handwerk",
+      "tier": 3,
+      "tierGruppe": "Geselle",
+      "description": "Karren/Wagen/Chassis (settingabhängig), Stabilität, Achsen, Reparatur.",
+      "parent": "Bauhandwerk",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 5,
+      "unlocksAt": 5
+    },
+    "flechtwerk": {
+      "name": "Flechtwerk",
+      "origin": "Core",
+      "bereich": "Handwerk",
+      "tier": 3,
+      "tierGruppe": "Geselle",
+      "description": "Körbe, Matten, leichte Bauteile; verbindet Bau & Kunsthandwerk.",
+      "parent": "Bauhandwerk, Kunsthandwerk",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 5,
+      "unlocksAt": 5
+    },
+    "toepferei": {
+      "name": "Töpferei",
+      "origin": "Core",
+      "bereich": "Handwerk",
+      "tier": 3,
+      "tierGruppe": "Geselle",
+      "description": "Keramik, Ziegel, Gefäße, Brennen/Glasuren (einfach).",
+      "parent": "Kunsthandwerk",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 5,
+      "unlocksAt": 5
+    },
+    "glasblaeserei": {
+      "name": "Glasbläserei",
+      "origin": "Core",
+      "bereich": "Handwerk",
+      "tier": 3,
+      "tierGruppe": "Geselle",
+      "description": "Glasgefäße, Scheiben, einfache Linsen/Flaschen (settingabhängig).",
+      "parent": "Kunsthandwerk",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 5,
+      "unlocksAt": 5
+    },
+    "juwelenschneiden": {
+      "name": "Juwelenschneiden",
+      "origin": "Core",
+      "bereich": "Handwerk",
+      "tier": 3,
+      "tierGruppe": "Geselle",
+      "description": "Steine schneiden/fassen, Präzisionsarbeit, Wertsteigerung.",
+      "parent": "Kunsthandwerk",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 5,
+      "unlocksAt": 5
+    },
+    "steinbearbeitung": {
+      "name": "Steinbearbeitung",
+      "origin": "Core",
+      "bereich": "Handwerk",
+      "tier": 3,
+      "tierGruppe": "Geselle",
+      "description": "Steine zuschneiden, Mauerwerk, Pflaster, einfache Skulptur/Details.",
+      "parent": "Bauhandwerk",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 5,
+      "unlocksAt": 5
+    },
+    "metallurgie": {
+      "name": "Metallurgie",
+      "origin": "Core",
+      "bereich": "Handwerk",
+      "tier": 4,
+      "tierGruppe": "Meister",
+      "description": "Fortgeschrittene Legierungen/Wärmebehandlung, Qualitätssicherung, Spezialstähle.",
+      "parent": "Gießerei",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "gerberei": {
+      "name": "Gerberei",
+      "origin": "Core",
+      "bereich": "Handwerk",
+      "tier": 3,
+      "tierGruppe": "Geselle",
+      "description": "Häute gerben, Leder aufbereiten, Riemen/Grundmaterial herstellen.",
+      "parent": "Kunsthandwerk",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 5,
+      "unlocksAt": 5
+    },
+    "naeherei": {
+      "name": "Näherei",
+      "origin": "Core",
+      "bereich": "Handwerk",
+      "tier": 3,
+      "tierGruppe": "Geselle",
+      "description": "Kleidung reparieren/anfertigen, Polster, Zelte/Planen, saubere Nähte.",
+      "parent": "Kunsthandwerk",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 5,
+      "unlocksAt": 5
+    },
+    "schneiderei": {
+      "name": "Schneiderei",
+      "origin": "Core",
+      "bereich": "Handwerk",
+      "tier": 4,
+      "tierGruppe": "Meister",
+      "description": "Maßarbeit, Schnittmuster, hochwertige Kleidung/Rüstungsunterpolster, komplexe Projekte.",
+      "parent": "Näherei",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "sattlerei": {
+      "name": "Sattlerei",
+      "origin": "Core",
+      "bereich": "Handwerk",
+      "tier": 4,
+      "tierGruppe": "Meister",
+      "description": "Maßarbeit, Präzise und Robuste Lederverarbeitungen, Schuhe, Stiefel, Rüstung und die Namensgebenden Sattel",
+      "parent": "Näherei",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "schurkerei": {
+      "name": "Schurkerei",
+      "origin": "Core",
+      "bereich": "Gaunerei",
+      "tier": 1,
+      "tierGruppe": "Anfänger",
+      "description": "",
+      "parent": null,
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 5,
+      "expMod": 5,
+      "unlocksAt": 5
+    },
+    "mechamismen": {
+      "name": "Mechamismen",
+      "origin": "Core",
+      "bereich": "Gaunerei",
+      "tier": 3,
+      "tierGruppe": "Schurke",
+      "description": "",
+      "parent": "Schurkerei",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "schleichen": {
+      "name": "Schleichen",
+      "origin": "Core",
+      "bereich": "Gaunerei",
+      "tier": 2,
+      "tierGruppe": "Schurke",
+      "description": "",
+      "parent": "Schurkerei",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 20,
+      "expMod": 5,
+      "unlocksAt": 5
+    },
+    "taschendiebstahl": {
+      "name": "Taschendiebstahl",
+      "origin": "Core",
+      "bereich": "Gaunerei",
+      "tier": 2,
+      "tierGruppe": "Schurke",
+      "description": "",
+      "parent": "Schurkerei",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 15,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "verstecken": {
+      "name": "Verstecken",
+      "origin": "Core",
+      "bereich": "Gaunerei",
+      "tier": 2,
+      "tierGruppe": "Schurke",
+      "description": "",
+      "parent": "Schurkerei",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 20,
+      "expMod": 5,
+      "unlocksAt": 5
+    },
+    "klettern": {
+      "name": "Klettern",
+      "origin": "Core",
+      "bereich": "",
+      "tier": 3,
+      "tierGruppe": "Schurke",
+      "description": "",
+      "parent": "Schurkerei",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "koerperbeherrschung": {
+      "name": "Körperbeherrschung",
+      "origin": "Core",
+      "bereich": "",
+      "tier": 2,
+      "tierGruppe": "Schurke",
+      "description": "",
+      "parent": "Schurkerei",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "leichtathletik": {
+      "name": "Leichtathletik",
+      "origin": "Core",
+      "bereich": "",
+      "tier": 2,
+      "tierGruppe": "Schurke",
+      "description": "",
+      "parent": "Schurkerei",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "schwimmen": {
+      "name": "Schwimmen",
+      "origin": "Core",
+      "bereich": "",
+      "tier": 2,
+      "tierGruppe": "Schurke",
+      "description": "",
+      "parent": "Schurkerei",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "zechen": {
+      "name": "Zechen",
+      "origin": "Core",
+      "bereich": "",
+      "tier": 2,
+      "tierGruppe": "Schurke",
+      "description": "",
+      "parent": "Schurkerei",
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    },
+    "faelschen": {
+      "name": "Fälschen",
+      "origin": "Core",
+      "bereich": "",
+      "tier": 1,
+      "tierGruppe": "",
+      "description": "",
+      "parent": null,
+      "baseValue": 0,
+      "upsPerLevel": 1,
+      "maxLevel": 10,
+      "expMod": 10,
+      "unlocksAt": 5
+    }
+  },
+  "backgrounds": {
+    "races": {
+      "mensch": {
+        "id": "mensch",
+        "name": "Mensch",
+        "icon": "👤",
+        "boni": [
+          {
+            "typ": "ExpMod",
+            "wert": 1.0
+          },
+          {
+            "typ": "Exp",
+            "wert": 0
+          }
+        ],
+        "origin": "Core",
+        "description": ""
+      },
+      "elf": {
+        "id": "elf",
+        "name": "Elf",
+        "icon": "🧝",
+        "boni": [
+          {
+            "typ": "ExpMod",
+            "wert": 0.8
+          },
+          {
+            "typ": "Exp",
+            "wert": 100
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "geschick",
+            "wert": 2
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "koerper",
+            "wert": -1
+          }
+        ],
+        "origin": "Core",
+        "description": ""
+      },
+      "zwerg": {
+        "id": "zwerg",
+        "name": "Zwerg",
+        "icon": "🧔",
+        "boni": [
+          {
+            "typ": "ExpMod",
+            "wert": 0.9
+          },
+          {
+            "typ": "Exp",
+            "wert": 50
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "konstitution",
+            "wert": 2
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "geschick",
+            "wert": -1
+          }
+        ],
+        "origin": "Core",
+        "description": ""
+      },
+      "ork": {
+        "id": "ork",
+        "name": "Ork",
+        "icon": "🐗",
+        "boni": [
+          {
+            "typ": "ExpMod",
+            "wert": 1.2
+          },
+          {
+            "typ": "Exp",
+            "wert": -20
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "koerper",
+            "wert": 3
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "geist",
+            "wert": -1
+          }
+        ],
+        "origin": "Core",
+        "description": ""
+      },
+      "halbling": {
+        "id": "halbling",
+        "name": "Halbling",
+        "icon": "🧚",
+        "boni": [
+          {
+            "typ": "ExpMod",
+            "wert": 1.0
+          },
+          {
+            "typ": "Exp",
+            "wert": 20
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "geschick",
+            "wert": 2
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "koerper",
+            "wert": -2
+          }
+        ],
+        "origin": "Core",
+        "description": ""
+      },
+      "gnom": {
+        "id": "gnom",
+        "name": "Gnom",
+        "icon": "🎩",
+        "boni": [
+          {
+            "typ": "ExpMod",
+            "wert": 0.95
+          },
+          {
+            "typ": "Exp",
+            "wert": 30
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "geist",
+            "wert": 2
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "koerper",
+            "wert": -1
+          }
+        ],
+        "origin": "Core",
+        "description": ""
+      },
+      "tiefling": {
+        "id": "tiefling",
+        "name": "Tiefling",
+        "icon": "😈",
+        "boni": [
+          {
+            "typ": "ExpMod",
+            "wert": 1.0
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "charisma",
+            "wert": 2
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "psyche",
+            "wert": -1
+          }
+        ],
+        "origin": "Core",
+        "description": ""
+      },
+      "drachenblut": {
+        "id": "drachenblut",
+        "name": "Drachenblut",
+        "icon": "🐉",
+        "boni": [
+          {
+            "typ": "ExpMod",
+            "wert": 0.85
+          },
+          {
+            "typ": "Exp",
+            "wert": 80
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "koerper",
+            "wert": 1
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "charisma",
+            "wert": 1
+          }
+        ],
+        "origin": "Core",
+        "description": ""
+      }
+    },
+    "homelands": {
+      "dorf": {
+        "id": "dorf",
+        "name": "Dorf",
+        "icon": "🏘️",
+        "boni": [
+          {
+            "typ": "Skill",
+            "ziel": "handwerker",
+            "wert": 1
+          }
+        ],
+        "origin": "Core",
+        "description": ""
+      },
+      "stadt": {
+        "id": "stadt",
+        "name": "Stadt",
+        "icon": "🏰",
+        "boni": [
+          {
+            "typ": "Skill",
+            "ziel": "schurkerei",
+            "wert": 1
+          }
+        ],
+        "origin": "Core",
+        "description": ""
+      },
+      "bergfestung": {
+        "id": "bergfestung",
+        "name": "Bergfestung",
+        "icon": "🏔️",
+        "boni": [
+          {
+            "typ": "Attribut",
+            "ziel": "konstitution",
+            "wert": 1
+          }
+        ],
+        "origin": "Core",
+        "description": ""
+      },
+      "waldlager": {
+        "id": "waldlager",
+        "name": "Waldlager",
+        "icon": "🌲",
+        "boni": [
+          {
+            "typ": "Skill",
+            "ziel": "basisfernkampf",
+            "wert": 1
+          }
+        ],
+        "origin": "Core",
+        "description": ""
+      },
+      "kueste": {
+        "id": "kueste",
+        "name": "Küstenort",
+        "icon": "🌊",
+        "boni": [],
+        "origin": "Core",
+        "description": ""
+      },
+      "nomadenstamm": {
+        "id": "nomadenstamm",
+        "name": "Nomadenstamm",
+        "icon": "🏜️",
+        "boni": [
+          {
+            "typ": "Attribut",
+            "ziel": "geschick",
+            "wert": 1
+          }
+        ],
+        "origin": "Core",
+        "description": ""
+      },
+      "untergrund": {
+        "id": "untergrund",
+        "name": "Untergrund",
+        "icon": "🕳️",
+        "boni": [
+          {
+            "typ": "Skill",
+            "ziel": "schleichen",
+            "wert": 1
+          }
+        ],
+        "origin": "Core",
+        "description": ""
+      }
+    },
+    "cultures": {
+      "kriegerisch": {
+        "id": "kriegerisch",
+        "name": "Kriegerisch",
+        "icon": "⚔️",
+        "boni": [
+          {
+            "typ": "Skill",
+            "ziel": "basiskampf",
+            "wert": 2
+          }
+        ],
+        "origin": "Core",
+        "description": ""
+      },
+      "barbarisch": {
+        "id": "barbarisch",
+        "name": "Barbarisch",
+        "icon": "🪓",
+        "boni": [
+          {
+            "typ": "Attribut",
+            "ziel": "koerper",
+            "wert": 1
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "geist",
+            "wert": -1
+          }
+        ],
+        "origin": "Core",
+        "description": ""
+      },
+      "philosophisch": {
+        "id": "philosophisch",
+        "name": "Philosophisch",
+        "icon": "📚",
+        "boni": [
+          {
+            "typ": "Attribut",
+            "ziel": "geist",
+            "wert": 2
+          }
+        ],
+        "origin": "Core",
+        "description": ""
+      },
+      "haendlerisch": {
+        "id": "haendlerisch",
+        "name": "Händlerisch",
+        "icon": "💰",
+        "boni": [
+          {
+            "typ": "Attribut",
+            "ziel": "charisma",
+            "wert": 1
+          }
+        ],
+        "origin": "Core",
+        "description": ""
+      },
+      "religioes": {
+        "id": "religioes",
+        "name": "Religiös",
+        "icon": "🙏",
+        "boni": [
+          {
+            "typ": "Attribut",
+            "ziel": "psyche",
+            "wert": 1
+          }
+        ],
+        "origin": "Core",
+        "description": ""
+      },
+      "nomadisch": {
+        "id": "nomadisch",
+        "name": "Nomadisch",
+        "icon": "🐪",
+        "boni": [
+          {
+            "typ": "Attribut",
+            "ziel": "konstitution",
+            "wert": 1
+          }
+        ],
+        "origin": "Core",
+        "description": ""
+      },
+      "seefahrer": {
+        "id": "seefahrer",
+        "name": "Seefahrer",
+        "icon": "⚓",
+        "boni": [],
+        "origin": "Core",
+        "description": ""
+      },
+      "kuenstlerisch": {
+        "id": "kuenstlerisch",
+        "name": "Künstlerisch",
+        "icon": "🎭",
+        "boni": [
+          {
+            "typ": "Attribut",
+            "ziel": "intuition",
+            "wert": 1
+          }
+        ],
+        "origin": "Core",
+        "description": ""
+      }
+    },
+    "upbringings": {
+      "eltern_handwerker": {
+        "id": "eltern_handwerker",
+        "name": "Handwerker-Eltern",
+        "icon": "🔨",
+        "boni": [
+          {
+            "typ": "Skill",
+            "ziel": "handwerker",
+            "wert": 2
+          }
+        ],
+        "origin": "Core",
+        "description": ""
+      },
+      "eltern_krieger": {
+        "id": "eltern_krieger",
+        "name": "Krieger-Eltern",
+        "icon": "⚔️",
+        "boni": [
+          {
+            "typ": "Skill",
+            "ziel": "basiskampf",
+            "wert": 1
+          }
+        ],
+        "origin": "Core",
+        "description": ""
+      },
+      "eltern_haendler": {
+        "id": "eltern_haendler",
+        "name": "Händler-Eltern",
+        "icon": "💰",
+        "boni": [
+          {
+            "typ": "Attribut",
+            "ziel": "charisma",
+            "wert": 1
+          }
+        ],
+        "origin": "Core",
+        "description": ""
+      },
+      "gilde": {
+        "id": "gilde",
+        "name": "Gilde/Orden",
+        "icon": "🏛️",
+        "boni": [
+          {
+            "typ": "Exp",
+            "wert": 30
+          }
+        ],
+        "origin": "Core",
+        "description": ""
+      },
+      "strasse": {
+        "id": "strasse",
+        "name": "Straßenkind",
+        "icon": "🦊",
+        "boni": [
+          {
+            "typ": "Skill",
+            "ziel": "schurkerei",
+            "wert": 2
+          }
+        ],
+        "origin": "Core",
+        "description": ""
+      },
+      "adelshaus": {
+        "id": "adelshaus",
+        "name": "Adelshaus",
+        "icon": "👑",
+        "boni": [
+          {
+            "typ": "Attribut",
+            "ziel": "charisma",
+            "wert": 1
+          },
+          {
+            "typ": "Exp",
+            "wert": 50
+          }
+        ],
+        "origin": "Core",
+        "description": ""
+      },
+      "kloster": {
+        "id": "kloster",
+        "name": "Kloster",
+        "icon": "📿",
+        "boni": [
+          {
+            "typ": "Attribut",
+            "ziel": "psyche",
+            "wert": 1
+          }
+        ],
+        "origin": "Core",
+        "description": ""
+      }
+    },
+    "trainings": {
+      "krieger": {
+        "id": "krieger",
+        "name": "Krieger",
+        "icon": "⚔️",
+        "boni": [
+          {
+            "typ": "Skill",
+            "ziel": "basiskampf",
+            "wert": 3
+          },
+          {
+            "typ": "Skill",
+            "ziel": "defensive",
+            "wert": 2
+          }
+        ],
+        "origin": "Core",
+        "description": ""
+      },
+      "schurke": {
+        "id": "schurke",
+        "name": "Schurke",
+        "icon": "🗡️",
+        "boni": [
+          {
+            "typ": "Skill",
+            "ziel": "schurkerei",
+            "wert": 3
+          },
+          {
+            "typ": "Skill",
+            "ziel": "basiskampf",
+            "wert": 1
+          }
+        ],
+        "origin": "Core",
+        "description": ""
+      },
+      "gelehrter": {
+        "id": "gelehrter",
+        "name": "Gelehrter",
+        "icon": "📖",
+        "boni": [
+          {
+            "typ": "Attribut",
+            "ziel": "geist",
+            "wert": 2
+          },
+          {
+            "typ": "Exp",
+            "wert": 40
+          }
+        ],
+        "origin": "Core",
+        "description": ""
+      },
+      "handwerker": {
+        "id": "handwerker",
+        "name": "Handwerker",
+        "icon": "🔨",
+        "boni": [
+          {
+            "typ": "Skill",
+            "ziel": "handwerker",
+            "wert": 4
+          }
+        ],
+        "origin": "Core",
+        "description": ""
+      },
+      "haendler": {
+        "id": "haendler",
+        "name": "Händler",
+        "icon": "💬",
+        "boni": [
+          {
+            "typ": "Attribut",
+            "ziel": "charisma",
+            "wert": 1
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "intuition",
+            "wert": 1
+          }
+        ],
+        "origin": "Core",
+        "description": ""
+      },
+      "priester": {
+        "id": "priester",
+        "name": "Priester",
+        "icon": "🙏",
+        "boni": [
+          {
+            "typ": "Attribut",
+            "ziel": "psyche",
+            "wert": 2
+          }
+        ],
+        "origin": "Core",
+        "description": ""
+      },
+      "jaeger": {
+        "id": "jaeger",
+        "name": "Jäger",
+        "icon": "🏹",
+        "boni": [
+          {
+            "typ": "Skill",
+            "ziel": "basisfernkampf",
+            "wert": 3
+          }
+        ],
+        "origin": "Core",
+        "description": ""
+      }
+    },
+    "callings": {
+      "rache": {
+        "id": "rache",
+        "name": "Rache",
+        "icon": "💀",
+        "boni": [
+          {
+            "typ": "Attribut",
+            "ziel": "psyche",
+            "wert": 1
+          }
+        ],
+        "description": "Jemand muss bezahlen.",
+        "origin": "Core"
+      },
+      "flucht": {
+        "id": "flucht",
+        "name": "Flucht",
+        "icon": "🏃",
+        "boni": [
+          {
+            "typ": "Skill",
+            "ziel": "schleichen",
+            "wert": 1
+          }
+        ],
+        "description": "Vor Gesetz, Feinden oder Vergangenheit.",
+        "origin": "Core"
+      },
+      "gier": {
+        "id": "gier",
+        "name": "Gier",
+        "icon": "💰",
+        "boni": [
+          {
+            "typ": "Exp",
+            "wert": 20
+          }
+        ],
+        "description": "Gold und Ruhm warten.",
+        "origin": "Core"
+      },
+      "wissen": {
+        "id": "wissen",
+        "name": "Wissen",
+        "icon": "📖",
+        "boni": [
+          {
+            "typ": "Attribut",
+            "ziel": "geist",
+            "wert": 1
+          }
+        ],
+        "description": "Die Wahrheit ist da draußen.",
+        "origin": "Core"
+      },
+      "pflicht": {
+        "id": "pflicht",
+        "name": "Pflicht",
+        "icon": "⚔️",
+        "boni": [
+          {
+            "typ": "Attribut",
+            "ziel": "fassade",
+            "wert": 1
+          }
+        ],
+        "description": "Ein Schwur muss erfüllt werden.",
+        "origin": "Core"
+      },
+      "verlust": {
+        "id": "verlust",
+        "name": "Verlust",
+        "icon": "💔",
+        "boni": [
+          {
+            "typ": "Vital",
+            "ziel": "moral",
+            "wert": -10
+          }
+        ],
+        "description": "Nichts hält mich mehr hier.",
+        "origin": "Core"
+      },
+      "bestimmung": {
+        "id": "bestimmung",
+        "name": "Bestimmung",
+        "icon": "🌟",
+        "boni": [
+          {
+            "typ": "Exp",
+            "wert": 30
+          }
+        ],
+        "description": "Die Götter/Schicksal riefen.",
+        "origin": "Core"
+      },
+      "zufall": {
+        "id": "zufall",
+        "name": "Zufall",
+        "icon": "🎲",
+        "boni": [
+          {
+            "typ": "Exp",
+            "wert": 50
+          }
+        ],
+        "description": "Falscher Ort, falsche Zeit.",
+        "origin": "Core"
+      },
+      "fernweh": {
+        "id": "fernweh",
+        "name": "Fernweh",
+        "icon": "🗺️",
+        "boni": [
+          {
+            "typ": "Attribut",
+            "ziel": "wahrnehmung",
+            "wert": 1
+          }
+        ],
+        "description": "Die Welt will erkundet werden.",
+        "origin": "Core"
+      },
+      "zugehoerigkeit": {
+        "id": "zugehoerigkeit",
+        "name": "Zugehörigkeit",
+        "icon": "👥",
+        "boni": [
+          {
+            "typ": "Attribut",
+            "ziel": "intuition",
+            "wert": 1
+          }
+        ],
+        "description": "Suche nach Familie oder Volk.",
+        "origin": "Core"
+      }
+    }
+  }
+}
