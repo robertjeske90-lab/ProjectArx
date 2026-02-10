@@ -6,6 +6,7 @@ import gameData from '../data/gameData.json';
 import SlideIntro from '../components/creator/SlideIntro';
 import SlideName from '../components/creator/SlideName';
 import SlideRace from '../components/creator/SlideRace';
+import SlidePhysical from '../components/creator/SlidePhysical';
 import SlideHomeland from '../components/creator/SlideHomeland';
 import SlideCulture from '../components/creator/SlideCulture';
 import SlideUpbringing from '../components/creator/SlideUpbringing';
@@ -19,6 +20,7 @@ const SLIDES = [
   { id: 'name', component: SlideName, title: 'Name' },
   { id: 'fatherRace', component: SlideRace, title: 'Vaters Rasse', props: { parent: 'father' } },
   { id: 'motherRace', component: SlideRace, title: 'Mutters Rasse', props: { parent: 'mother' } },
+  { id: 'physical', component: SlidePhysical, title: 'Körper' },  // NEU!
   { id: 'homeland', component: SlideHomeland, title: 'Heimat' },
   { id: 'culture', component: SlideCulture, title: 'Kultur' },
   { id: 'upbringing', component: SlideUpbringing, title: 'Erziehung' },
@@ -42,6 +44,11 @@ export default function CharacterCreatorSlideshow() {
     fatherName: '',
     motherRace: null,
     motherName: '',
+    // Physical - NEU!
+    age: null,
+    height: null,
+    stature: 0,
+    // Rest
     homeland: null,
     homelandName: '',
     culture: null,
@@ -128,8 +135,65 @@ export default function CharacterCreatorSlideshow() {
       }
     });
 
+    // Age-based modifiers
+    if (characterData.age !== null && characterData.fatherRace && characterData.motherRace) {
+      const ageCategory = getAgeCategory(characterData.age);
+      
+      // Kinder: Mali auf Körper
+      if (ageCategory === 'baby' || ageCategory === 'kleinkind') {
+        stats.attributes.koerper = Math.max(1, stats.attributes.koerper - 4);
+        stats.attributes.geist = Math.max(1, stats.attributes.geist - 2);
+      } else if (ageCategory === 'jugendlicher') {
+        stats.attributes.koerper = Math.max(1, stats.attributes.koerper - 1);
+      }
+      
+      // Alte: Mali auf Körper, Boni auf Geist
+      if (ageCategory === 'alt') {
+        stats.attributes.koerper = Math.max(1, stats.attributes.koerper - 1);
+        stats.attributes.geist += 1;
+      } else if (ageCategory === 'greis') {
+        stats.attributes.koerper = Math.max(1, stats.attributes.koerper - 2);
+        stats.attributes.geschick = Math.max(1, stats.attributes.geschick - 1);
+        stats.attributes.geist += 2;
+      } else if (ageCategory === 'verfallend') {
+        stats.attributes.koerper = Math.max(1, stats.attributes.koerper - 4);
+        stats.attributes.geschick = Math.max(1, stats.attributes.geschick - 2);
+        stats.attributes.konstitution = Math.max(1, stats.attributes.konstitution - 2);
+        stats.attributes.geist += 2;
+        stats.attributes.intuition += 1;
+      }
+    }
+
     stats.expMod = Math.round(stats.expMod * 100) / 100;
     return stats;
+  };
+
+  // Helper: Get age category based on combined parent races
+  const getAgeCategory = (age) => {
+    const fatherRace = gameData.backgrounds.races[characterData.fatherRace];
+    const motherRace = gameData.backgrounds.races[characterData.motherRace];
+    
+    const fatherCats = fatherRace?.physical?.ageCategories;
+    const motherCats = motherRace?.physical?.ageCategories;
+    
+    if (!fatherCats && !motherCats) return 'erwachsen';
+    
+    // Use father's categories as base, or mother's
+    const cats = fatherCats || motherCats;
+    
+    for (const [category, [min, max]] of Object.entries(cats)) {
+      // For hybrids, average the ranges
+      let avgMin = min, avgMax = max;
+      if (fatherCats && motherCats && fatherCats[category] && motherCats[category]) {
+        avgMin = Math.round((fatherCats[category][0] + motherCats[category][0]) / 2);
+        avgMax = Math.round((fatherCats[category][1] + motherCats[category][1]) / 2);
+      }
+      
+      if (age >= avgMin && age <= avgMax) {
+        return category;
+      }
+    }
+    return 'verfallend';
   };
 
   const updateCharacter = (updates) => {
@@ -155,6 +219,7 @@ export default function CharacterCreatorSlideshow() {
       case 'name': return characterData.name.trim().length > 0;
       case 'fatherRace': return characterData.fatherRace !== null;
       case 'motherRace': return characterData.motherRace !== null;
+      case 'physical': return true; // Optional, defaults werden gesetzt
       case 'homeland': return characterData.homeland !== null;
       case 'culture': return characterData.culture !== null;
       case 'upbringing': return characterData.upbringing !== null;
@@ -171,6 +236,13 @@ export default function CharacterCreatorSlideshow() {
     try {
       const stats = calculateStats();
       
+      // Calculate weight for storage
+      const heightM = (characterData.height || 170) / 100;
+      const bmiMod = 1.0; // TODO: Get from race
+      const baseBMI = 21.5 * bmiMod;
+      const adjustedBMI = baseBMI + ((characterData.stature || 0) * 5);
+      const weight = Math.round(adjustedBMI * heightM * heightM);
+      
       const newChar = await createCharacterV2({
         name: characterData.name,
         alias: characterData.alias,
@@ -185,6 +257,12 @@ export default function CharacterCreatorSlideshow() {
           upbringing: characterData.upbringing,
           training: characterData.training,
           calling: characterData.calling,
+        },
+        physical: {
+          age: characterData.age,
+          height: characterData.height,
+          weight: weight,
+          stature: characterData.stature,
         },
         alignment: characterData.alignment,
         backstory: characterData.backstory,
