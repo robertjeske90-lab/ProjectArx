@@ -139,28 +139,51 @@ export default function CharacterCreatorSlideshow() {
     if (characterData.age !== null && characterData.fatherRace && characterData.motherRace) {
       const ageCategory = getAgeCategory(characterData.age);
       
-      // Kinder: Mali auf Körper
-      if (ageCategory === 'baby' || ageCategory === 'kleinkind') {
-        stats.attributes.koerper = Math.max(1, stats.attributes.koerper - 4);
-        stats.attributes.geist = Math.max(1, stats.attributes.geist - 2);
-      } else if (ageCategory === 'jugendlicher') {
-        stats.attributes.koerper = Math.max(1, stats.attributes.koerper - 1);
-      }
-      
-      // Alte: Mali auf Körper, Boni auf Geist
-      if (ageCategory === 'alt') {
-        stats.attributes.koerper = Math.max(1, stats.attributes.koerper - 1);
-        stats.attributes.geist += 1;
-      } else if (ageCategory === 'greis') {
-        stats.attributes.koerper = Math.max(1, stats.attributes.koerper - 2);
-        stats.attributes.geschick = Math.max(1, stats.attributes.geschick - 1);
-        stats.attributes.geist += 2;
-      } else if (ageCategory === 'verfallend') {
+      // JUNGE: Körper noch nicht entwickelt, aber lernt schneller!
+      if (ageCategory === 'baby') {
+        stats.attributes.koerper = Math.max(1, stats.attributes.koerper - 6);
+        stats.attributes.geschick = Math.max(1, stats.attributes.geschick - 4);
+        stats.attributes.geist = Math.max(1, stats.attributes.geist - 4);
+        stats.expMod *= 1.5; // +50% EP!
+      } else if (ageCategory === 'kleinkind') {
         stats.attributes.koerper = Math.max(1, stats.attributes.koerper - 4);
         stats.attributes.geschick = Math.max(1, stats.attributes.geschick - 2);
-        stats.attributes.konstitution = Math.max(1, stats.attributes.konstitution - 2);
+        stats.attributes.geist = Math.max(1, stats.attributes.geist - 2);
+        stats.expMod *= 1.3; // +30% EP!
+      } else if (ageCategory === 'jugendlicher') {
+        stats.attributes.koerper = Math.max(1, stats.attributes.koerper - 2);
+        stats.attributes.geschick = Math.max(1, stats.attributes.geschick - 1);
+        stats.expMod *= 1.2; // +20% EP!
+      }
+      
+      // ALTE: Körper verfällt, aber weise! Lernt langsamer.
+      if (ageCategory === 'alternd') {
+        stats.attributes.koerper = Math.max(1, stats.attributes.koerper - 1);
+        stats.attributes.geschick = Math.max(1, stats.attributes.geschick - 1);
+        stats.attributes.geist += 1;
+        stats.attributes.intuition += 1;
+        // Kein ExpMod Mali - noch fit genug
+      } else if (ageCategory === 'alt') {
+        stats.attributes.koerper = Math.max(1, stats.attributes.koerper - 2);
+        stats.attributes.geschick = Math.max(1, stats.attributes.geschick - 2);
+        stats.attributes.konstitution = Math.max(1, stats.attributes.konstitution - 1);
         stats.attributes.geist += 2;
         stats.attributes.intuition += 1;
+        stats.expMod *= 0.9; // -10% EP
+      } else if (ageCategory === 'greis') {
+        stats.attributes.koerper = Math.max(1, stats.attributes.koerper - 4);
+        stats.attributes.geschick = Math.max(1, stats.attributes.geschick - 3);
+        stats.attributes.konstitution = Math.max(1, stats.attributes.konstitution - 2);
+        stats.attributes.geist += 3;
+        stats.attributes.intuition += 2;
+        stats.expMod *= 0.8; // -20% EP
+      } else if (ageCategory === 'verfallend') {
+        stats.attributes.koerper = Math.max(1, stats.attributes.koerper - 6);
+        stats.attributes.geschick = Math.max(1, stats.attributes.geschick - 4);
+        stats.attributes.konstitution = Math.max(1, stats.attributes.konstitution - 3);
+        stats.attributes.geist += 3;
+        stats.attributes.intuition += 2;
+        stats.expMod *= 0.7; // -30% EP
       }
     }
 

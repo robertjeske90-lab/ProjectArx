@@ -155,14 +155,39 @@ export default function SlidePhysical({ data, updateData, gameData }) {
           </div>
           
           {/* Altersstufen-Warnung */}
-          {(currentAgeCategory === 'baby' || currentAgeCategory === 'kleinkind') && (
+          {currentAgeCategory === 'baby' && (
             <div className="mt-3 p-2 bg-yellow-500/10 border border-yellow-500/30 rounded-lg text-yellow-400 text-xs">
-              ⚠️ Kinder können eingeschränkte Fähigkeiten haben
+              ⚒️ Baby: -6 KÖR, -4 GES, -4 GEI | Aber: +50% EP-Bonus! Junge lernen schnell.
             </div>
           )}
-          {(currentAgeCategory === 'greis' || currentAgeCategory === 'verfallend') && (
+          {currentAgeCategory === 'kleinkind' && (
+            <div className="mt-3 p-2 bg-yellow-500/10 border border-yellow-500/30 rounded-lg text-yellow-400 text-xs">
+              💔 Kleinkind: -4 KÖR, -2 GES, -2 GEI | Aber: +30% EP-Bonus!
+            </div>
+          )}
+          {currentAgeCategory === 'jugendlicher' && (
+            <div className="mt-3 p-2 bg-blue-500/10 border border-blue-500/30 rounded-lg text-blue-400 text-xs">
+              🧒 Jugendlicher: -2 KÖR, -1 GES | Aber: +20% EP-Bonus!
+            </div>
+          )}
+          {currentAgeCategory === 'alternd' && (
+            <div className="mt-3 p-2 bg-yellow-500/10 border border-yellow-500/30 rounded-lg text-yellow-400 text-xs">
+              🧓 Alternd: -1 KÖR, -1 GES | Aber: +1 GEI, +1 INT
+            </div>
+          )}
+          {currentAgeCategory === 'alt' && (
+            <div className="mt-3 p-2 bg-orange-500/10 border border-orange-500/30 rounded-lg text-orange-400 text-xs">
+              👴 Alt: -2 KÖR, -2 GES, -1 KON | +2 GEI, +1 INT | -10% EP
+            </div>
+          )}
+          {currentAgeCategory === 'greis' && (
             <div className="mt-3 p-2 bg-red-500/10 border border-red-500/30 rounded-lg text-red-400 text-xs">
-              ⚠️ Hohes Alter kann Mali auf körperliche Attribute verursachen
+              🏚 Greis: -4 KÖR, -3 GES, -2 KON | +3 GEI, +2 INT | -20% EP
+            </div>
+          )}
+          {currentAgeCategory === 'verfallend' && (
+            <div className="mt-3 p-2 bg-red-500/10 border border-red-500/30 rounded-lg text-red-400 text-xs">
+              💀 Verfallend: -6 KÖR, -4 GES, -3 KON | +3 GEI, +2 INT | -30% EP
             </div>
           )}
         </div>

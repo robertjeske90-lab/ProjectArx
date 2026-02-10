@@ -4175,6 +4175,52 @@
         "id": "mensch",
         "name": "Mensch",
         "icon": "👤",
+        "origin": "Core",
+        "description": "Vielseitig und anpassungsfähig. Die häufigste Rasse.",
+        "physical": {
+          "minHeight": 155,
+          "maxHeight": 195,
+          "bmiMod": 1.0,
+          "maxAge": 90,
+          "ageCategories": {
+            "baby": [
+              0,
+              1
+            ],
+            "kleinkind": [
+              2,
+              5
+            ],
+            "jugendlicher": [
+              6,
+              15
+            ],
+            "jungerErwachsener": [
+              16,
+              25
+            ],
+            "erwachsen": [
+              26,
+              45
+            ],
+            "alternd": [
+              46,
+              60
+            ],
+            "alt": [
+              61,
+              75
+            ],
+            "greis": [
+              76,
+              85
+            ],
+            "verfallend": [
+              86,
+              90
+            ]
+          }
+        },
         "boni": [
           {
             "typ": "ExpMod",
@@ -4182,43 +4228,541 @@
           },
           {
             "typ": "Exp",
-            "wert": 0
+            "wert": 20
           }
-        ],
-        "origin": "Core",
-        "description": ""
+        ]
       },
-      "elf": {
-        "id": "elf",
-        "name": "Elf",
-        "icon": "🧝",
+      "nordlaender": {
+        "id": "nordlaender",
+        "name": "Nordländer",
+        "icon": "🧔",
+        "origin": "Core",
+        "description": "Robuste Menschen aus dem kalten Norden. Kriegerisch und zäh.",
+        "physical": {
+          "minHeight": 170,
+          "maxHeight": 205,
+          "bmiMod": 1.15,
+          "maxAge": 80,
+          "ageCategories": {
+            "baby": [
+              0,
+              1
+            ],
+            "kleinkind": [
+              2,
+              5
+            ],
+            "jugendlicher": [
+              6,
+              14
+            ],
+            "jungerErwachsener": [
+              15,
+              22
+            ],
+            "erwachsen": [
+              23,
+              40
+            ],
+            "alternd": [
+              41,
+              55
+            ],
+            "alt": [
+              56,
+              68
+            ],
+            "greis": [
+              69,
+              76
+            ],
+            "verfallend": [
+              77,
+              80
+            ]
+          }
+        },
         "boni": [
           {
-            "typ": "ExpMod",
-            "wert": 0.8
+            "typ": "Attribut",
+            "ziel": "konstitution",
+            "wert": 2
           },
           {
-            "typ": "Exp",
-            "wert": 100
+            "typ": "Skill",
+            "ziel": "basiskampf",
+            "wert": 1
+          }
+        ]
+      },
+      "suedlaender": {
+        "id": "suedlaender",
+        "name": "Südländer",
+        "icon": "🏜️",
+        "origin": "Core",
+        "description": "Händler und Gelehrte aus warmen Landen.",
+        "physical": {
+          "minHeight": 160,
+          "maxHeight": 185,
+          "bmiMod": 0.95,
+          "maxAge": 95,
+          "ageCategories": {
+            "baby": [
+              0,
+              1
+            ],
+            "kleinkind": [
+              2,
+              5
+            ],
+            "jugendlicher": [
+              6,
+              15
+            ],
+            "jungerErwachsener": [
+              16,
+              26
+            ],
+            "erwachsen": [
+              27,
+              48
+            ],
+            "alternd": [
+              49,
+              65
+            ],
+            "alt": [
+              66,
+              80
+            ],
+            "greis": [
+              81,
+              90
+            ],
+            "verfallend": [
+              91,
+              95
+            ]
+          }
+        },
+        "boni": [
+          {
+            "typ": "Attribut",
+            "ziel": "charisma",
+            "wert": 1
           },
           {
             "typ": "Attribut",
-            "ziel": "geschick",
+            "ziel": "geist",
+            "wert": 1
+          }
+        ]
+      },
+      "hochelf": {
+        "id": "hochelf",
+        "name": "Hochelf",
+        "icon": "🧝",
+        "origin": "Core",
+        "description": "Älteste und weiseste der Elfen. Magisch begabt.",
+        "physical": {
+          "minHeight": 170,
+          "maxHeight": 195,
+          "bmiMod": 0.85,
+          "maxAge": 1500,
+          "ageCategories": {
+            "baby": [
+              0,
+              5
+            ],
+            "kleinkind": [
+              6,
+              25
+            ],
+            "jugendlicher": [
+              26,
+              80
+            ],
+            "jungerErwachsener": [
+              81,
+              200
+            ],
+            "erwachsen": [
+              201,
+              600
+            ],
+            "alternd": [
+              601,
+              900
+            ],
+            "alt": [
+              901,
+              1200
+            ],
+            "greis": [
+              1201,
+              1400
+            ],
+            "verfallend": [
+              1401,
+              1500
+            ]
+          }
+        },
+        "boni": [
+          {
+            "typ": "ExpMod",
+            "wert": 0.75
+          },
+          {
+            "typ": "Exp",
+            "wert": 120
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "geist",
             "wert": 2
           },
           {
             "typ": "Attribut",
-            "ziel": "koerper",
+            "ziel": "konstitution",
             "wert": -1
           }
-        ],
-        "origin": "Core",
-        "description": ""
+        ]
       },
-      "zwerg": {
-        "id": "zwerg",
-        "name": "Zwerg",
-        "icon": "🧔",
+      "waldelf": {
+        "id": "waldelf",
+        "name": "Waldelf",
+        "icon": "🌿",
+        "origin": "Core",
+        "description": "Eins mit der Natur. Meisterhafte Jäger und Waldläufer.",
+        "physical": {
+          "minHeight": 160,
+          "maxHeight": 185,
+          "bmiMod": 0.8,
+          "maxAge": 900,
+          "ageCategories": {
+            "baby": [
+              0,
+              4
+            ],
+            "kleinkind": [
+              5,
+              20
+            ],
+            "jugendlicher": [
+              21,
+              60
+            ],
+            "jungerErwachsener": [
+              61,
+              150
+            ],
+            "erwachsen": [
+              151,
+              400
+            ],
+            "alternd": [
+              401,
+              600
+            ],
+            "alt": [
+              601,
+              750
+            ],
+            "greis": [
+              751,
+              850
+            ],
+            "verfallend": [
+              851,
+              900
+            ]
+          }
+        },
+        "boni": [
+          {
+            "typ": "ExpMod",
+            "wert": 0.85
+          },
+          {
+            "typ": "Exp",
+            "wert": 80
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "wahrnehmung",
+            "wert": 2
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "geschick",
+            "wert": 1
+          }
+        ]
+      },
+      "dunkelelf": {
+        "id": "dunkelelf",
+        "name": "Dunkelelf",
+        "icon": "🌑",
+        "origin": "Core",
+        "description": "Bewohner der Unterwelt. Meister der Heimlichkeit.",
+        "physical": {
+          "minHeight": 160,
+          "maxHeight": 180,
+          "bmiMod": 0.85,
+          "maxAge": 800,
+          "ageCategories": {
+            "baby": [
+              0,
+              4
+            ],
+            "kleinkind": [
+              5,
+              18
+            ],
+            "jugendlicher": [
+              19,
+              50
+            ],
+            "jungerErwachsener": [
+              51,
+              120
+            ],
+            "erwachsen": [
+              121,
+              350
+            ],
+            "alternd": [
+              351,
+              520
+            ],
+            "alt": [
+              521,
+              650
+            ],
+            "greis": [
+              651,
+              750
+            ],
+            "verfallend": [
+              751,
+              800
+            ]
+          }
+        },
+        "boni": [
+          {
+            "typ": "ExpMod",
+            "wert": 0.9
+          },
+          {
+            "typ": "Exp",
+            "wert": 60
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "intuition",
+            "wert": 2
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "wahrnehmung",
+            "wert": -1
+          }
+        ]
+      },
+      "halbelf": {
+        "id": "halbelf",
+        "name": "Halbelf",
+        "icon": "🧝‍♂️",
+        "origin": "Core",
+        "description": "Das Beste beider Welten - Mensch und Elf vereint.",
+        "physical": {
+          "minHeight": 165,
+          "maxHeight": 190,
+          "bmiMod": 0.9,
+          "maxAge": 200,
+          "ageCategories": {
+            "baby": [
+              0,
+              2
+            ],
+            "kleinkind": [
+              3,
+              10
+            ],
+            "jugendlicher": [
+              11,
+              25
+            ],
+            "jungerErwachsener": [
+              26,
+              50
+            ],
+            "erwachsen": [
+              51,
+              100
+            ],
+            "alternd": [
+              101,
+              150
+            ],
+            "alt": [
+              151,
+              175
+            ],
+            "greis": [
+              176,
+              190
+            ],
+            "verfallend": [
+              191,
+              200
+            ]
+          }
+        },
+        "boni": [
+          {
+            "typ": "ExpMod",
+            "wert": 0.95
+          },
+          {
+            "typ": "Exp",
+            "wert": 40
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "charisma",
+            "wert": 1
+          }
+        ]
+      },
+      "bergzwerg": {
+        "id": "bergzwerg",
+        "name": "Bergzwerg",
+        "icon": "⛏️",
+        "origin": "Core",
+        "description": "Meisterschmiede der tiefen Berge.",
+        "physical": {
+          "minHeight": 120,
+          "maxHeight": 145,
+          "bmiMod": 1.4,
+          "maxAge": 450,
+          "ageCategories": {
+            "baby": [
+              0,
+              3
+            ],
+            "kleinkind": [
+              4,
+              12
+            ],
+            "jugendlicher": [
+              13,
+              30
+            ],
+            "jungerErwachsener": [
+              31,
+              60
+            ],
+            "erwachsen": [
+              61,
+              180
+            ],
+            "alternd": [
+              181,
+              300
+            ],
+            "alt": [
+              301,
+              380
+            ],
+            "greis": [
+              381,
+              430
+            ],
+            "verfallend": [
+              431,
+              450
+            ]
+          }
+        },
+        "boni": [
+          {
+            "typ": "ExpMod",
+            "wert": 0.85
+          },
+          {
+            "typ": "Exp",
+            "wert": 60
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "konstitution",
+            "wert": 3
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "psyche",
+            "wert": 1
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "geschick",
+            "wert": -1
+          }
+        ]
+      },
+      "huegelzwerg": {
+        "id": "huegelzwerg",
+        "name": "Hügelzwerg",
+        "icon": "🍺",
+        "origin": "Core",
+        "description": "Geselliger als ihre Berg-Verwandten. Braumeister.",
+        "physical": {
+          "minHeight": 115,
+          "maxHeight": 140,
+          "bmiMod": 1.35,
+          "maxAge": 400,
+          "ageCategories": {
+            "baby": [
+              0,
+              3
+            ],
+            "kleinkind": [
+              4,
+              10
+            ],
+            "jugendlicher": [
+              11,
+              28
+            ],
+            "jungerErwachsener": [
+              29,
+              55
+            ],
+            "erwachsen": [
+              56,
+              160
+            ],
+            "alternd": [
+              161,
+              270
+            ],
+            "alt": [
+              271,
+              340
+            ],
+            "greis": [
+              341,
+              385
+            ],
+            "verfallend": [
+              386,
+              400
+            ]
+          }
+        },
         "boni": [
           {
             "typ": "ExpMod",
@@ -4235,44 +4779,61 @@
           },
           {
             "typ": "Attribut",
-            "ziel": "geschick",
-            "wert": -1
+            "ziel": "charisma",
+            "wert": 1
           }
-        ],
-        "origin": "Core",
-        "description": ""
-      },
-      "ork": {
-        "id": "ork",
-        "name": "Ork",
-        "icon": "🐗",
-        "boni": [
-          {
-            "typ": "ExpMod",
-            "wert": 1.2
-          },
-          {
-            "typ": "Exp",
-            "wert": -20
-          },
-          {
-            "typ": "Attribut",
-            "ziel": "koerper",
-            "wert": 3
-          },
-          {
-            "typ": "Attribut",
-            "ziel": "geist",
-            "wert": -1
-          }
-        ],
-        "origin": "Core",
-        "description": ""
+        ]
       },
       "halbling": {
         "id": "halbling",
         "name": "Halbling",
-        "icon": "🧚",
+        "icon": "🧑‍🌾",
+        "origin": "Core",
+        "description": "Klein, flink und überraschend mutig.",
+        "physical": {
+          "minHeight": 90,
+          "maxHeight": 115,
+          "bmiMod": 0.95,
+          "maxAge": 150,
+          "ageCategories": {
+            "baby": [
+              0,
+              2
+            ],
+            "kleinkind": [
+              3,
+              8
+            ],
+            "jugendlicher": [
+              9,
+              18
+            ],
+            "jungerErwachsener": [
+              19,
+              33
+            ],
+            "erwachsen": [
+              34,
+              75
+            ],
+            "alternd": [
+              76,
+              110
+            ],
+            "alt": [
+              111,
+              130
+            ],
+            "greis": [
+              131,
+              145
+            ],
+            "verfallend": [
+              146,
+              150
+            ]
+          }
+        },
         "boni": [
           {
             "typ": "ExpMod",
@@ -4289,17 +4850,852 @@
           },
           {
             "typ": "Attribut",
+            "ziel": "psyche",
+            "wert": 1
+          },
+          {
+            "typ": "Attribut",
             "ziel": "koerper",
             "wert": -2
           }
-        ],
-        "origin": "Core",
-        "description": ""
+        ]
       },
-      "gnom": {
-        "id": "gnom",
-        "name": "Gnom",
-        "icon": "🎩",
+      "waldgnom": {
+        "id": "waldgnom",
+        "name": "Waldgnom",
+        "icon": "🍄",
+        "origin": "Core",
+        "description": "Naturverbundene Tüftler mit Hang zur Illusion.",
+        "physical": {
+          "minHeight": 75,
+          "maxHeight": 100,
+          "bmiMod": 0.8,
+          "maxAge": 500,
+          "ageCategories": {
+            "baby": [
+              0,
+              4
+            ],
+            "kleinkind": [
+              5,
+              15
+            ],
+            "jugendlicher": [
+              16,
+              40
+            ],
+            "jungerErwachsener": [
+              41,
+              100
+            ],
+            "erwachsen": [
+              101,
+              250
+            ],
+            "alternd": [
+              251,
+              380
+            ],
+            "alt": [
+              381,
+              440
+            ],
+            "greis": [
+              441,
+              480
+            ],
+            "verfallend": [
+              481,
+              500
+            ]
+          }
+        },
+        "boni": [
+          {
+            "typ": "ExpMod",
+            "wert": 0.9
+          },
+          {
+            "typ": "Exp",
+            "wert": 40
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "geist",
+            "wert": 2
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "intuition",
+            "wert": 1
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "koerper",
+            "wert": -2
+          }
+        ]
+      },
+      "felsgnom": {
+        "id": "felsgnom",
+        "name": "Felsgnom",
+        "icon": "⚙️",
+        "origin": "Core",
+        "description": "Erfinder und Ingenieure.",
+        "physical": {
+          "minHeight": 85,
+          "maxHeight": 110,
+          "bmiMod": 0.9,
+          "maxAge": 400,
+          "ageCategories": {
+            "baby": [
+              0,
+              3
+            ],
+            "kleinkind": [
+              4,
+              12
+            ],
+            "jugendlicher": [
+              13,
+              35
+            ],
+            "jungerErwachsener": [
+              36,
+              80
+            ],
+            "erwachsen": [
+              81,
+              200
+            ],
+            "alternd": [
+              201,
+              300
+            ],
+            "alt": [
+              301,
+              360
+            ],
+            "greis": [
+              361,
+              390
+            ],
+            "verfallend": [
+              391,
+              400
+            ]
+          }
+        },
+        "boni": [
+          {
+            "typ": "ExpMod",
+            "wert": 0.95
+          },
+          {
+            "typ": "Exp",
+            "wert": 30
+          },
+          {
+            "typ": "Skill",
+            "ziel": "handwerker",
+            "wert": 2
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "geist",
+            "wert": 1
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "koerper",
+            "wert": -1
+          }
+        ]
+      },
+      "ork": {
+        "id": "ork",
+        "name": "Ork",
+        "icon": "👹",
+        "origin": "Core",
+        "description": "Brutal, stark und kurzlebig. Geboren für den Krieg.",
+        "physical": {
+          "minHeight": 175,
+          "maxHeight": 215,
+          "bmiMod": 1.25,
+          "maxAge": 50,
+          "ageCategories": {
+            "baby": [
+              0,
+              0
+            ],
+            "kleinkind": [
+              1,
+              2
+            ],
+            "jugendlicher": [
+              3,
+              8
+            ],
+            "jungerErwachsener": [
+              9,
+              15
+            ],
+            "erwachsen": [
+              16,
+              30
+            ],
+            "alternd": [
+              31,
+              40
+            ],
+            "alt": [
+              41,
+              46
+            ],
+            "greis": [
+              47,
+              49
+            ],
+            "verfallend": [
+              50,
+              50
+            ]
+          }
+        },
+        "boni": [
+          {
+            "typ": "ExpMod",
+            "wert": 1.25
+          },
+          {
+            "typ": "Exp",
+            "wert": -30
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "koerper",
+            "wert": 4
+          },
+          {
+            "typ": "Skill",
+            "ziel": "basiskampf",
+            "wert": 2
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "geist",
+            "wert": -2
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "psyche",
+            "wert": -1
+          }
+        ]
+      },
+      "halbork": {
+        "id": "halbork",
+        "name": "Halbork",
+        "icon": "💪",
+        "origin": "Core",
+        "description": "Die Stärke des Orks mit menschlicher Vernunft.",
+        "physical": {
+          "minHeight": 170,
+          "maxHeight": 205,
+          "bmiMod": 1.2,
+          "maxAge": 75,
+          "ageCategories": {
+            "baby": [
+              0,
+              1
+            ],
+            "kleinkind": [
+              2,
+              4
+            ],
+            "jugendlicher": [
+              5,
+              12
+            ],
+            "jungerErwachsener": [
+              13,
+              20
+            ],
+            "erwachsen": [
+              21,
+              40
+            ],
+            "alternd": [
+              41,
+              55
+            ],
+            "alt": [
+              56,
+              65
+            ],
+            "greis": [
+              66,
+              72
+            ],
+            "verfallend": [
+              73,
+              75
+            ]
+          }
+        },
+        "boni": [
+          {
+            "typ": "ExpMod",
+            "wert": 1.1
+          },
+          {
+            "typ": "Exp",
+            "wert": -10
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "koerper",
+            "wert": 2
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "konstitution",
+            "wert": 1
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "charisma",
+            "wert": -1
+          }
+        ]
+      },
+      "goblin": {
+        "id": "goblin",
+        "name": "Goblin",
+        "icon": "👺",
+        "origin": "Core",
+        "description": "Klein, hinterlistig und zahlreich.",
+        "physical": {
+          "minHeight": 80,
+          "maxHeight": 110,
+          "bmiMod": 0.85,
+          "maxAge": 40,
+          "ageCategories": {
+            "baby": [
+              0,
+              0
+            ],
+            "kleinkind": [
+              1,
+              1
+            ],
+            "jugendlicher": [
+              2,
+              5
+            ],
+            "jungerErwachsener": [
+              6,
+              10
+            ],
+            "erwachsen": [
+              11,
+              22
+            ],
+            "alternd": [
+              23,
+              30
+            ],
+            "alt": [
+              31,
+              36
+            ],
+            "greis": [
+              37,
+              39
+            ],
+            "verfallend": [
+              40,
+              40
+            ]
+          }
+        },
+        "boni": [
+          {
+            "typ": "ExpMod",
+            "wert": 1.3
+          },
+          {
+            "typ": "Exp",
+            "wert": -40
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "intuition",
+            "wert": 2
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "geschick",
+            "wert": 1
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "koerper",
+            "wert": -3
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "psyche",
+            "wert": -1
+          }
+        ]
+      },
+      "drachenblut": {
+        "id": "drachenblut",
+        "name": "Drachenblut",
+        "icon": "🐉",
+        "origin": "Core",
+        "description": "Nachfahren der Drachen. Stolz und mächtig.",
+        "physical": {
+          "minHeight": 180,
+          "maxHeight": 215,
+          "bmiMod": 1.1,
+          "maxAge": 150,
+          "ageCategories": {
+            "baby": [
+              0,
+              2
+            ],
+            "kleinkind": [
+              3,
+              8
+            ],
+            "jugendlicher": [
+              9,
+              20
+            ],
+            "jungerErwachsener": [
+              21,
+              40
+            ],
+            "erwachsen": [
+              41,
+              80
+            ],
+            "alternd": [
+              81,
+              110
+            ],
+            "alt": [
+              111,
+              135
+            ],
+            "greis": [
+              136,
+              145
+            ],
+            "verfallend": [
+              146,
+              150
+            ]
+          }
+        },
+        "boni": [
+          {
+            "typ": "ExpMod",
+            "wert": 0.9
+          },
+          {
+            "typ": "Exp",
+            "wert": 60
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "charisma",
+            "wert": 2
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "konstitution",
+            "wert": 1
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "koerper",
+            "wert": 1
+          }
+        ]
+      },
+      "katzling": {
+        "id": "katzling",
+        "name": "Katzling",
+        "icon": "🐱",
+        "origin": "Core",
+        "description": "Geschmeidig, neugierig und unabhängig.",
+        "physical": {
+          "minHeight": 155,
+          "maxHeight": 185,
+          "bmiMod": 0.85,
+          "maxAge": 80,
+          "ageCategories": {
+            "baby": [
+              0,
+              1
+            ],
+            "kleinkind": [
+              2,
+              4
+            ],
+            "jugendlicher": [
+              5,
+              12
+            ],
+            "jungerErwachsener": [
+              13,
+              20
+            ],
+            "erwachsen": [
+              21,
+              45
+            ],
+            "alternd": [
+              46,
+              60
+            ],
+            "alt": [
+              61,
+              72
+            ],
+            "greis": [
+              73,
+              78
+            ],
+            "verfallend": [
+              79,
+              80
+            ]
+          }
+        },
+        "boni": [
+          {
+            "typ": "ExpMod",
+            "wert": 1.05
+          },
+          {
+            "typ": "Exp",
+            "wert": 15
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "geschick",
+            "wert": 3
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "wahrnehmung",
+            "wert": 1
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "intuition",
+            "wert": 1
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "charisma",
+            "wert": -1
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "koerper",
+            "wert": -1
+          }
+        ]
+      },
+      "wolfsmensch": {
+        "id": "wolfsmensch",
+        "name": "Wolfsmensch",
+        "icon": "🐺",
+        "origin": "Core",
+        "description": "Rudelwesen mit scharfen Sinnen.",
+        "physical": {
+          "minHeight": 175,
+          "maxHeight": 210,
+          "bmiMod": 1.1,
+          "maxAge": 70,
+          "ageCategories": {
+            "baby": [
+              0,
+              0
+            ],
+            "kleinkind": [
+              1,
+              3
+            ],
+            "jugendlicher": [
+              4,
+              10
+            ],
+            "jungerErwachsener": [
+              11,
+              18
+            ],
+            "erwachsen": [
+              19,
+              38
+            ],
+            "alternd": [
+              39,
+              52
+            ],
+            "alt": [
+              53,
+              62
+            ],
+            "greis": [
+              63,
+              68
+            ],
+            "verfallend": [
+              69,
+              70
+            ]
+          }
+        },
+        "boni": [
+          {
+            "typ": "ExpMod",
+            "wert": 1.1
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "wahrnehmung",
+            "wert": 2
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "koerper",
+            "wert": 2
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "charisma",
+            "wert": -1
+          }
+        ]
+      },
+      "minotaurus": {
+        "id": "minotaurus",
+        "name": "Minotaurus",
+        "icon": "🐂",
+        "origin": "Core",
+        "description": "Gewaltige Stiermenschen. Stark und stur.",
+        "physical": {
+          "minHeight": 210,
+          "maxHeight": 260,
+          "bmiMod": 1.4,
+          "maxAge": 90,
+          "ageCategories": {
+            "baby": [
+              0,
+              1
+            ],
+            "kleinkind": [
+              2,
+              5
+            ],
+            "jugendlicher": [
+              6,
+              14
+            ],
+            "jungerErwachsener": [
+              15,
+              25
+            ],
+            "erwachsen": [
+              26,
+              50
+            ],
+            "alternd": [
+              51,
+              70
+            ],
+            "alt": [
+              71,
+              82
+            ],
+            "greis": [
+              83,
+              88
+            ],
+            "verfallend": [
+              89,
+              90
+            ]
+          }
+        },
+        "boni": [
+          {
+            "typ": "ExpMod",
+            "wert": 1.0
+          },
+          {
+            "typ": "Exp",
+            "wert": 20
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "koerper",
+            "wert": 4
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "konstitution",
+            "wert": 2
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "psyche",
+            "wert": 1
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "geschick",
+            "wert": -2
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "geist",
+            "wert": -1
+          }
+        ]
+      },
+      "feenblut": {
+        "id": "feenblut",
+        "name": "Feenblut",
+        "icon": "🧚",
+        "origin": "Core",
+        "description": "Ein Tropfen Feenblut in den Adern. Launisch und magisch.",
+        "physical": {
+          "minHeight": 145,
+          "maxHeight": 175,
+          "bmiMod": 0.75,
+          "maxAge": 400,
+          "ageCategories": {
+            "baby": [
+              0,
+              3
+            ],
+            "kleinkind": [
+              4,
+              15
+            ],
+            "jugendlicher": [
+              16,
+              45
+            ],
+            "jungerErwachsener": [
+              46,
+              100
+            ],
+            "erwachsen": [
+              101,
+              200
+            ],
+            "alternd": [
+              201,
+              300
+            ],
+            "alt": [
+              301,
+              360
+            ],
+            "greis": [
+              361,
+              390
+            ],
+            "verfallend": [
+              391,
+              400
+            ]
+          }
+        },
+        "boni": [
+          {
+            "typ": "ExpMod",
+            "wert": 0.85
+          },
+          {
+            "typ": "Exp",
+            "wert": 50
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "charisma",
+            "wert": 2
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "psyche",
+            "wert": -1
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "konstitution",
+            "wert": -1
+          }
+        ]
+      },
+      "satyr": {
+        "id": "satyr",
+        "name": "Satyr",
+        "icon": "🍇",
+        "origin": "Core",
+        "description": "Lebenslustige Ziegenwesen. Musiker und Trinker.",
+        "physical": {
+          "minHeight": 155,
+          "maxHeight": 180,
+          "bmiMod": 0.95,
+          "maxAge": 200,
+          "ageCategories": {
+            "baby": [
+              0,
+              2
+            ],
+            "kleinkind": [
+              3,
+              10
+            ],
+            "jugendlicher": [
+              11,
+              30
+            ],
+            "jungerErwachsener": [
+              31,
+              60
+            ],
+            "erwachsen": [
+              61,
+              120
+            ],
+            "alternd": [
+              121,
+              160
+            ],
+            "alt": [
+              161,
+              185
+            ],
+            "greis": [
+              186,
+              195
+            ],
+            "verfallend": [
+              196,
+              200
+            ]
+          }
+        },
         "boni": [
           {
             "typ": "ExpMod",
@@ -4311,26 +5707,160 @@
           },
           {
             "typ": "Attribut",
-            "ziel": "geist",
+            "ziel": "charisma",
             "wert": 2
           },
           {
+            "typ": "Skill",
+            "ziel": "musikalitaet",
+            "wert": 1
+          },
+          {
             "typ": "Attribut",
-            "ziel": "koerper",
+            "ziel": "geschick",
+            "wert": 1
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "psyche",
             "wert": -1
           }
-        ],
-        "origin": "Core",
-        "description": ""
+        ]
       },
       "tiefling": {
         "id": "tiefling",
         "name": "Tiefling",
         "icon": "😈",
+        "origin": "Core",
+        "description": "Teuflisches Erbe. Misstraut und gefürchtet.",
+        "physical": {
+          "minHeight": 160,
+          "maxHeight": 195,
+          "bmiMod": 0.95,
+          "maxAge": 120,
+          "ageCategories": {
+            "baby": [
+              0,
+              1
+            ],
+            "kleinkind": [
+              2,
+              6
+            ],
+            "jugendlicher": [
+              7,
+              16
+            ],
+            "jungerErwachsener": [
+              17,
+              28
+            ],
+            "erwachsen": [
+              29,
+              60
+            ],
+            "alternd": [
+              61,
+              85
+            ],
+            "alt": [
+              86,
+              105
+            ],
+            "greis": [
+              106,
+              115
+            ],
+            "verfallend": [
+              116,
+              120
+            ]
+          }
+        },
         "boni": [
           {
             "typ": "ExpMod",
             "wert": 1.0
+          },
+          {
+            "typ": "Exp",
+            "wert": 20
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "charisma",
+            "wert": 2
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "intuition",
+            "wert": 1
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "psyche",
+            "wert": -1
+          }
+        ]
+      },
+      "aasimar": {
+        "id": "aasimar",
+        "name": "Aasimar",
+        "icon": "😇",
+        "origin": "Core",
+        "description": "Himmlisches Erbe. Gesegnet und beschützt.",
+        "physical": {
+          "minHeight": 165,
+          "maxHeight": 195,
+          "bmiMod": 0.95,
+          "maxAge": 180,
+          "ageCategories": {
+            "baby": [
+              0,
+              2
+            ],
+            "kleinkind": [
+              3,
+              8
+            ],
+            "jugendlicher": [
+              9,
+              20
+            ],
+            "jungerErwachsener": [
+              21,
+              40
+            ],
+            "erwachsen": [
+              41,
+              90
+            ],
+            "alternd": [
+              91,
+              130
+            ],
+            "alt": [
+              131,
+              160
+            ],
+            "greis": [
+              161,
+              175
+            ],
+            "verfallend": [
+              176,
+              180
+            ]
+          }
+        },
+        "boni": [
+          {
+            "typ": "ExpMod",
+            "wert": 0.9
+          },
+          {
+            "typ": "Exp",
+            "wert": 50
           },
           {
             "typ": "Attribut",
@@ -4340,38 +5870,166 @@
           {
             "typ": "Attribut",
             "ziel": "psyche",
-            "wert": -1
+            "wert": 1
           }
-        ],
-        "origin": "Core",
-        "description": ""
+        ]
       },
-      "drachenblut": {
-        "id": "drachenblut",
-        "name": "Drachenblut",
-        "icon": "🐉",
+      "dhampir": {
+        "id": "dhampir",
+        "name": "Dhampir",
+        "icon": "🧛",
+        "origin": "Core",
+        "description": "Halb Vampir. Zwischen Leben und Tod.",
+        "physical": {
+          "minHeight": 165,
+          "maxHeight": 195,
+          "bmiMod": 0.9,
+          "maxAge": 500,
+          "ageCategories": {
+            "baby": [
+              0,
+              2
+            ],
+            "kleinkind": [
+              3,
+              10
+            ],
+            "jugendlicher": [
+              11,
+              25
+            ],
+            "jungerErwachsener": [
+              26,
+              60
+            ],
+            "erwachsen": [
+              61,
+              200
+            ],
+            "alternd": [
+              201,
+              350
+            ],
+            "alt": [
+              351,
+              430
+            ],
+            "greis": [
+              431,
+              480
+            ],
+            "verfallend": [
+              481,
+              500
+            ]
+          }
+        },
         "boni": [
           {
             "typ": "ExpMod",
-            "wert": 0.85
+            "wert": 0.8
           },
           {
             "typ": "Exp",
-            "wert": 80
-          },
-          {
-            "typ": "Attribut",
-            "ziel": "koerper",
-            "wert": 1
+            "wert": 70
           },
           {
             "typ": "Attribut",
             "ziel": "charisma",
+            "wert": 2
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "wahrnehmung",
             "wert": 1
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "konstitution",
+            "wert": -1
           }
-        ],
+        ]
+      },
+      "goliath": {
+        "id": "goliath",
+        "name": "Goliath",
+        "icon": "🏔️",
         "origin": "Core",
-        "description": ""
+        "description": "Bergriesen-Blut. Wettstreit ist alles.",
+        "physical": {
+          "minHeight": 200,
+          "maxHeight": 245,
+          "bmiMod": 1.25,
+          "maxAge": 90,
+          "ageCategories": {
+            "baby": [
+              0,
+              1
+            ],
+            "kleinkind": [
+              2,
+              5
+            ],
+            "jugendlicher": [
+              6,
+              14
+            ],
+            "jungerErwachsener": [
+              15,
+              24
+            ],
+            "erwachsen": [
+              25,
+              50
+            ],
+            "alternd": [
+              51,
+              70
+            ],
+            "alt": [
+              71,
+              82
+            ],
+            "greis": [
+              83,
+              88
+            ],
+            "verfallend": [
+              89,
+              90
+            ]
+          }
+        },
+        "boni": [
+          {
+            "typ": "ExpMod",
+            "wert": 1.05
+          },
+          {
+            "typ": "Exp",
+            "wert": 20
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "koerper",
+            "wert": 3
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "konstitution",
+            "wert": 2
+          },
+          {
+            "typ": "Skill",
+            "ziel": "basiskampf",
+            "wert": 1
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "geist",
+            "wert": -1
+          }
+        ]
       }
     },
     "homelands": {
@@ -4379,93 +6037,139 @@
         "id": "dorf",
         "name": "Dorf",
         "icon": "🏘️",
-        "boni": [
-          {
-            "typ": "Skill",
-            "ziel": "handwerker",
-            "wert": 1
-          }
-        ],
         "origin": "Core",
-        "description": ""
-      },
-      "stadt": {
-        "id": "stadt",
-        "name": "Stadt",
-        "icon": "🏰",
-        "boni": [
-          {
-            "typ": "Skill",
-            "ziel": "schurkerei",
-            "wert": 1
-          }
-        ],
-        "origin": "Core",
-        "description": ""
-      },
-      "bergfestung": {
-        "id": "bergfestung",
-        "name": "Bergfestung",
-        "icon": "🏔️",
+        "description": "Kleine ländliche Gemeinde",
         "boni": [
           {
             "typ": "Attribut",
             "ziel": "konstitution",
             "wert": 1
           }
-        ],
+        ]
+      },
+      "kleinstadt": {
+        "id": "kleinstadt",
+        "name": "Kleinstadt",
+        "icon": "🏛️",
         "origin": "Core",
-        "description": ""
+        "description": "Beschauliche Stadt mit Marktplatz",
+        "boni": [
+          {
+            "typ": "Exp",
+            "wert": 15
+          }
+        ]
+      },
+      "grossstadt": {
+        "id": "grossstadt",
+        "name": "Großstadt",
+        "icon": "🏰",
+        "origin": "Core",
+        "description": "Pulsierende Metropole",
+        "boni": [
+          {
+            "typ": "Skill",
+            "ziel": "schurkerei",
+            "wert": 1
+          }
+        ]
+      },
+      "hauptstadt": {
+        "id": "hauptstadt",
+        "name": "Hauptstadt",
+        "icon": "👑",
+        "origin": "Core",
+        "description": "Zentrum eines Reiches",
+        "boni": [
+          {
+            "typ": "Exp",
+            "wert": 30
+          }
+        ]
+      },
+      "bergfestung": {
+        "id": "bergfestung",
+        "name": "Bergfestung",
+        "icon": "🏔️",
+        "origin": "Core",
+        "description": "Festung in den Bergen",
+        "boni": [
+          {
+            "typ": "Attribut",
+            "ziel": "konstitution",
+            "wert": 2
+          }
+        ]
       },
       "waldlager": {
         "id": "waldlager",
         "name": "Waldlager",
         "icon": "🌲",
+        "origin": "Core",
+        "description": "Versteckte Siedlung im Wald",
         "boni": [
           {
             "typ": "Skill",
             "ziel": "basisfernkampf",
             "wert": 1
           }
-        ],
+        ]
+      },
+      "hoehle": {
+        "id": "hoehle",
+        "name": "Höhlensystem",
+        "icon": "🕳️",
         "origin": "Core",
-        "description": ""
+        "description": "Unterirdische Behausung",
+        "boni": [
+          {
+            "typ": "Attribut",
+            "ziel": "wahrnehmung",
+            "wert": 1
+          }
+        ]
       },
       "kueste": {
         "id": "kueste",
         "name": "Küstenort",
         "icon": "🌊",
-        "boni": [],
         "origin": "Core",
-        "description": ""
-      },
-      "nomadenstamm": {
-        "id": "nomadenstamm",
-        "name": "Nomadenstamm",
-        "icon": "🏜️",
+        "description": "Fischerdorf oder Hafenstadt",
         "boni": [
           {
             "typ": "Attribut",
             "ziel": "geschick",
             "wert": 1
           }
-        ],
+        ]
+      },
+      "wueste": {
+        "id": "wueste",
+        "name": "Wüste",
+        "icon": "🏜️",
         "origin": "Core",
-        "description": ""
+        "description": "Oase oder Wüstenlager",
+        "boni": [
+          {
+            "typ": "Attribut",
+            "ziel": "konstitution",
+            "wert": 1
+          }
+        ]
       },
       "untergrund": {
         "id": "untergrund",
-        "name": "Untergrund",
-        "icon": "🕳️",
+        "name": "Unterreich",
+        "icon": "💎",
+        "origin": "Core",
+        "description": "Tiefe Höhlenstädte",
         "boni": [
           {
-            "typ": "Skill",
-            "ziel": "schleichen",
+            "typ": "Attribut",
+            "ziel": "wahrnehmung",
             "wert": 1
           }
-        ],
-        "origin": "Core",
-        "description": ""
+        ]
       }
     },
     "cultures": {
@@ -4473,215 +6177,323 @@
         "id": "kriegerisch",
         "name": "Kriegerisch",
         "icon": "⚔️",
+        "origin": "Core",
+        "description": "Kampf und Ehre stehen im Mittelpunkt",
         "boni": [
           {
             "typ": "Skill",
             "ziel": "basiskampf",
             "wert": 2
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "konstitution",
+            "wert": 1
           }
-        ],
-        "origin": "Core",
-        "description": ""
+        ]
       },
       "barbarisch": {
         "id": "barbarisch",
         "name": "Barbarisch",
         "icon": "🪓",
+        "origin": "Core",
+        "description": "Wilde Stämme, naturverbunden und unzivilisiert",
         "boni": [
           {
             "typ": "Attribut",
             "ziel": "koerper",
-            "wert": 1
+            "wert": 2
           },
           {
             "typ": "Attribut",
             "ziel": "geist",
             "wert": -1
           }
-        ],
-        "origin": "Core",
-        "description": ""
+        ]
       },
-      "philosophisch": {
-        "id": "philosophisch",
-        "name": "Philosophisch",
-        "icon": "📚",
-        "boni": [
-          {
-            "typ": "Attribut",
-            "ziel": "geist",
-            "wert": 2
-          }
-        ],
+      "imperialistisch": {
+        "id": "imperialistisch",
+        "name": "Imperialistisch",
+        "icon": "👑",
         "origin": "Core",
-        "description": ""
-      },
-      "haendlerisch": {
-        "id": "haendlerisch",
-        "name": "Händlerisch",
-        "icon": "💰",
-        "boni": [
-          {
-            "typ": "Attribut",
-            "ziel": "charisma",
-            "wert": 1
-          }
-        ],
-        "origin": "Core",
-        "description": ""
-      },
-      "religioes": {
-        "id": "religioes",
-        "name": "Religiös",
-        "icon": "🙏",
+        "description": "Große Reiche mit Bürokratie und Militär",
         "boni": [
           {
             "typ": "Attribut",
             "ziel": "psyche",
             "wert": 1
+          },
+          {
+            "typ": "Exp",
+            "wert": 30
           }
-        ],
+        ]
+      },
+      "theokratisch": {
+        "id": "theokratisch",
+        "name": "Theokratisch",
+        "icon": "🙏",
         "origin": "Core",
-        "description": ""
+        "description": "Religion bestimmt alle Lebensbereiche",
+        "boni": [
+          {
+            "typ": "Attribut",
+            "ziel": "psyche",
+            "wert": 2
+          }
+        ]
+      },
+      "haendlerisch": {
+        "id": "haendlerisch",
+        "name": "Händlerisch",
+        "icon": "💰",
+        "origin": "Core",
+        "description": "Handel und Profit über alles",
+        "boni": [
+          {
+            "typ": "Attribut",
+            "ziel": "charisma",
+            "wert": 2
+          }
+        ]
       },
       "nomadisch": {
         "id": "nomadisch",
         "name": "Nomadisch",
         "icon": "🐪",
+        "origin": "Core",
+        "description": "Wandernde Völker ohne feste Heimat",
+        "boni": [
+          {
+            "typ": "Attribut",
+            "ziel": "konstitution",
+            "wert": 1
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "wahrnehmung",
+            "wert": 1
+          }
+        ]
+      },
+      "seefahrer": {
+        "id": "seefahrer",
+        "name": "Seefahrer",
+        "icon": "⚓",
+        "origin": "Core",
+        "description": "Das Meer ist ihre Heimat",
+        "boni": [
+          {
+            "typ": "Attribut",
+            "ziel": "geschick",
+            "wert": 1
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "konstitution",
+            "wert": 1
+          }
+        ]
+      },
+      "gelehrt": {
+        "id": "gelehrt",
+        "name": "Gelehrt",
+        "icon": "📚",
+        "origin": "Core",
+        "description": "Wissen und Bildung werden hochgeschätzt",
+        "boni": [
+          {
+            "typ": "Attribut",
+            "ziel": "geist",
+            "wert": 2
+          },
+          {
+            "typ": "Exp",
+            "wert": 40
+          }
+        ]
+      },
+      "kuenstlerisch": {
+        "id": "kuenstlerisch",
+        "name": "Künstlerisch",
+        "icon": "🎭",
+        "origin": "Core",
+        "description": "Kunst und Schönheit über allem",
+        "boni": [
+          {
+            "typ": "Attribut",
+            "ziel": "intuition",
+            "wert": 2
+          }
+        ]
+      },
+      "mystisch": {
+        "id": "mystisch",
+        "name": "Mystisch",
+        "icon": "🔮",
+        "origin": "Core",
+        "description": "Magie durchdringt den Alltag",
+        "boni": [
+          {
+            "typ": "Attribut",
+            "ziel": "wahrnehmung",
+            "wert": 1
+          },
+          {
+            "typ": "Exp",
+            "wert": 30
+          }
+        ]
+      }
+    },
+    "upbringings": {
+      "eltern_bauern": {
+        "id": "eltern_bauern",
+        "name": "Bauern-Eltern",
+        "icon": "🌾",
+        "origin": "Core",
+        "description": "Aufgewachsen auf dem Feld",
         "boni": [
           {
             "typ": "Attribut",
             "ziel": "konstitution",
             "wert": 1
           }
-        ],
-        "origin": "Core",
-        "description": ""
+        ]
       },
-      "seefahrer": {
-        "id": "seefahrer",
-        "name": "Seefahrer",
-        "icon": "⚓",
-        "boni": [],
-        "origin": "Core",
-        "description": ""
-      },
-      "kuenstlerisch": {
-        "id": "kuenstlerisch",
-        "name": "Künstlerisch",
-        "icon": "🎭",
-        "boni": [
-          {
-            "typ": "Attribut",
-            "ziel": "intuition",
-            "wert": 1
-          }
-        ],
-        "origin": "Core",
-        "description": ""
-      }
-    },
-    "upbringings": {
       "eltern_handwerker": {
         "id": "eltern_handwerker",
         "name": "Handwerker-Eltern",
         "icon": "🔨",
+        "origin": "Core",
+        "description": "In einer Werkstatt großgeworden",
         "boni": [
           {
             "typ": "Skill",
             "ziel": "handwerker",
             "wert": 2
           }
-        ],
-        "origin": "Core",
-        "description": ""
+        ]
       },
       "eltern_krieger": {
         "id": "eltern_krieger",
         "name": "Krieger-Eltern",
         "icon": "⚔️",
+        "origin": "Core",
+        "description": "Von Soldaten erzogen",
         "boni": [
           {
             "typ": "Skill",
             "ziel": "basiskampf",
-            "wert": 1
+            "wert": 2
           }
-        ],
-        "origin": "Core",
-        "description": ""
+        ]
       },
       "eltern_haendler": {
         "id": "eltern_haendler",
         "name": "Händler-Eltern",
         "icon": "💰",
+        "origin": "Core",
+        "description": "Zwischen Waren aufgewachsen",
         "boni": [
+          {
+            "typ": "Attribut",
+            "ziel": "charisma",
+            "wert": 2
+          }
+        ]
+      },
+      "eltern_gelehrte": {
+        "id": "eltern_gelehrte",
+        "name": "Gelehrten-Eltern",
+        "icon": "📚",
+        "origin": "Core",
+        "description": "Umgeben von Büchern",
+        "boni": [
+          {
+            "typ": "Attribut",
+            "ziel": "geist",
+            "wert": 2
+          },
+          {
+            "typ": "Exp",
+            "wert": 40
+          }
+        ]
+      },
+      "eltern_adel": {
+        "id": "eltern_adel",
+        "name": "Adels-Eltern",
+        "icon": "👑",
+        "origin": "Core",
+        "description": "Mit goldenem Löffel",
+        "boni": [
+          {
+            "typ": "Exp",
+            "wert": 60
+          },
           {
             "typ": "Attribut",
             "ziel": "charisma",
             "wert": 1
           }
-        ],
-        "origin": "Core",
-        "description": ""
+        ]
       },
-      "gilde": {
-        "id": "gilde",
-        "name": "Gilde/Orden",
-        "icon": "🏛️",
+      "eltern_priester": {
+        "id": "eltern_priester",
+        "name": "Priester-Eltern",
+        "icon": "🙏",
+        "origin": "Core",
+        "description": "Im Glauben erzogen",
         "boni": [
           {
-            "typ": "Exp",
-            "wert": 30
+            "typ": "Attribut",
+            "ziel": "psyche",
+            "wert": 2
           }
-        ],
-        "origin": "Core",
-        "description": ""
+        ]
       },
       "strasse": {
         "id": "strasse",
         "name": "Straßenkind",
         "icon": "🦊",
+        "origin": "Core",
+        "description": "Sich selbst überlassen",
         "boni": [
           {
             "typ": "Skill",
             "ziel": "schurkerei",
-            "wert": 2
-          }
-        ],
-        "origin": "Core",
-        "description": ""
-      },
-      "adelshaus": {
-        "id": "adelshaus",
-        "name": "Adelshaus",
-        "icon": "👑",
-        "boni": [
+            "wert": 3
+          },
           {
             "typ": "Attribut",
-            "ziel": "charisma",
+            "ziel": "konstitution",
             "wert": 1
           },
           {
             "typ": "Exp",
-            "wert": 50
+            "wert": -20
           }
-        ],
-        "origin": "Core",
-        "description": ""
+        ]
       },
-      "kloster": {
-        "id": "kloster",
-        "name": "Kloster",
-        "icon": "📿",
+      "wildnis": {
+        "id": "wildnis",
+        "name": "In der Wildnis",
+        "icon": "🐺",
+        "origin": "Core",
+        "description": "Von Tieren oder allein",
         "boni": [
           {
             "typ": "Attribut",
-            "ziel": "psyche",
-            "wert": 1
+            "ziel": "wahrnehmung",
+            "wert": 2
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "charisma",
+            "wert": -2
           }
-        ],
-        "origin": "Core",
-        "description": ""
+        ]
       }
     },
     "trainings": {
@@ -4689,6 +6501,8 @@
         "id": "krieger",
         "name": "Krieger",
         "icon": "⚔️",
+        "origin": "Core",
+        "description": "Militärische Kampfausbildung",
         "boni": [
           {
             "typ": "Skill",
@@ -4700,14 +6514,14 @@
             "ziel": "defensive",
             "wert": 2
           }
-        ],
-        "origin": "Core",
-        "description": ""
+        ]
       },
       "schurke": {
         "id": "schurke",
         "name": "Schurke",
         "icon": "🗡️",
+        "origin": "Core",
+        "description": "Heimlichkeit und Tricks",
         "boni": [
           {
             "typ": "Skill",
@@ -4719,50 +6533,87 @@
             "ziel": "basiskampf",
             "wert": 1
           }
-        ],
+        ]
+      },
+      "jaeger": {
+        "id": "jaeger",
+        "name": "Jäger",
+        "icon": "🏹",
         "origin": "Core",
-        "description": ""
+        "description": "Überleben in der Wildnis",
+        "boni": [
+          {
+            "typ": "Skill",
+            "ziel": "basisfernkampf",
+            "wert": 3
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "wahrnehmung",
+            "wert": 1
+          }
+        ]
       },
       "gelehrter": {
         "id": "gelehrter",
         "name": "Gelehrter",
         "icon": "📖",
+        "origin": "Core",
+        "description": "Akademisches Studium",
         "boni": [
           {
             "typ": "Attribut",
             "ziel": "geist",
-            "wert": 2
+            "wert": 3
           },
           {
             "typ": "Exp",
-            "wert": 40
+            "wert": 50
           }
-        ],
-        "origin": "Core",
-        "description": ""
+        ]
       },
-      "handwerker": {
-        "id": "handwerker",
+      "handwerker_training": {
+        "id": "handwerker_training",
         "name": "Handwerker",
-        "icon": "🔨",
+        "icon": "🔧",
+        "origin": "Core",
+        "description": "Praktisches Handwerk",
         "boni": [
           {
             "typ": "Skill",
             "ziel": "handwerker",
             "wert": 4
           }
-        ],
-        "origin": "Core",
-        "description": ""
+        ]
       },
-      "haendler": {
-        "id": "haendler",
-        "name": "Händler",
-        "icon": "💬",
+      "barde": {
+        "id": "barde",
+        "name": "Barde",
+        "icon": "🎵",
+        "origin": "Core",
+        "description": "Musik und Geschichten",
         "boni": [
           {
             "typ": "Attribut",
             "ziel": "charisma",
+            "wert": 2
+          },
+          {
+            "typ": "Exp",
+            "wert": 20
+          }
+        ]
+      },
+      "heiler": {
+        "id": "heiler",
+        "name": "Heiler",
+        "icon": "💚",
+        "origin": "Core",
+        "description": "Medizin und Pflege",
+        "boni": [
+          {
+            "typ": "Attribut",
+            "ziel": "geist",
             "wert": 1
           },
           {
@@ -4770,37 +6621,26 @@
             "ziel": "intuition",
             "wert": 1
           }
-        ],
-        "origin": "Core",
-        "description": ""
+        ]
       },
-      "priester": {
-        "id": "priester",
-        "name": "Priester",
-        "icon": "🙏",
-        "boni": [
-          {
-            "typ": "Attribut",
-            "ziel": "psyche",
-            "wert": 2
-          }
-        ],
+      "dieb": {
+        "id": "dieb",
+        "name": "Dieb",
+        "icon": "🎭",
         "origin": "Core",
-        "description": ""
-      },
-      "jaeger": {
-        "id": "jaeger",
-        "name": "Jäger",
-        "icon": "🏹",
+        "description": "Die Kunst des Stehlens",
         "boni": [
           {
             "typ": "Skill",
-            "ziel": "basisfernkampf",
-            "wert": 3
+            "ziel": "schurkerei",
+            "wert": 4
+          },
+          {
+            "typ": "Attribut",
+            "ziel": "geschick",
+            "wert": 1
           }
-        ],
-        "origin": "Core",
-        "description": ""
+        ]
       }
     },
     "callings": {
@@ -4808,138 +6648,125 @@
         "id": "rache",
         "name": "Rache",
         "icon": "💀",
+        "origin": "Core",
+        "description": "Jemand muss bezahlen",
         "boni": [
           {
             "typ": "Attribut",
             "ziel": "psyche",
-            "wert": 1
+            "wert": 2
           }
-        ],
-        "description": "Jemand muss bezahlen.",
-        "origin": "Core"
+        ]
       },
       "flucht": {
         "id": "flucht",
         "name": "Flucht",
         "icon": "🏃",
+        "origin": "Core",
+        "description": "Vor Gesetz, Feinden oder Vergangenheit",
         "boni": [
           {
             "typ": "Skill",
-            "ziel": "schleichen",
+            "ziel": "schurkerei",
             "wert": 1
           }
-        ],
-        "description": "Vor Gesetz, Feinden oder Vergangenheit.",
-        "origin": "Core"
+        ]
       },
       "gier": {
         "id": "gier",
         "name": "Gier",
         "icon": "💰",
+        "origin": "Core",
+        "description": "Gold und Ruhm warten",
         "boni": [
           {
             "typ": "Exp",
-            "wert": 20
+            "wert": 30
           }
-        ],
-        "description": "Gold und Ruhm warten.",
-        "origin": "Core"
+        ]
       },
       "wissen": {
         "id": "wissen",
         "name": "Wissen",
         "icon": "📖",
+        "origin": "Core",
+        "description": "Die Wahrheit ist da draußen",
         "boni": [
           {
             "typ": "Attribut",
             "ziel": "geist",
             "wert": 1
           }
-        ],
-        "description": "Die Wahrheit ist da draußen.",
-        "origin": "Core"
+        ]
       },
       "pflicht": {
         "id": "pflicht",
         "name": "Pflicht",
         "icon": "⚔️",
+        "origin": "Core",
+        "description": "Ein Schwur muss erfüllt werden",
         "boni": [
           {
             "typ": "Attribut",
             "ziel": "fassade",
             "wert": 1
           }
-        ],
-        "description": "Ein Schwur muss erfüllt werden.",
-        "origin": "Core"
-      },
-      "verlust": {
-        "id": "verlust",
-        "name": "Verlust",
-        "icon": "💔",
-        "boni": [
-          {
-            "typ": "Vital",
-            "ziel": "moral",
-            "wert": -10
-          }
-        ],
-        "description": "Nichts hält mich mehr hier.",
-        "origin": "Core"
+        ]
       },
       "bestimmung": {
         "id": "bestimmung",
         "name": "Bestimmung",
         "icon": "🌟",
+        "origin": "Core",
+        "description": "Götter oder Schicksal riefen",
         "boni": [
           {
             "typ": "Exp",
-            "wert": 30
+            "wert": 40
           }
-        ],
-        "description": "Die Götter/Schicksal riefen.",
-        "origin": "Core"
-      },
-      "zufall": {
-        "id": "zufall",
-        "name": "Zufall",
-        "icon": "🎲",
-        "boni": [
-          {
-            "typ": "Exp",
-            "wert": 50
-          }
-        ],
-        "description": "Falscher Ort, falsche Zeit.",
-        "origin": "Core"
+        ]
       },
       "fernweh": {
         "id": "fernweh",
         "name": "Fernweh",
         "icon": "🗺️",
+        "origin": "Core",
+        "description": "Die Welt will erkundet werden",
         "boni": [
           {
             "typ": "Attribut",
             "ziel": "wahrnehmung",
             "wert": 1
           }
-        ],
-        "description": "Die Welt will erkundet werden.",
-        "origin": "Core"
+        ]
       },
-      "zugehoerigkeit": {
-        "id": "zugehoerigkeit",
-        "name": "Zugehörigkeit",
-        "icon": "👥",
+      "erloesung": {
+        "id": "erloesung",
+        "name": "Erlösung",
+        "icon": "🕊️",
+        "origin": "Core",
+        "description": "Wiedergutmachung vergangener Sünden",
+        "boni": [
+          {
+            "typ": "Attribut",
+            "ziel": "psyche",
+            "wert": 1
+          }
+        ]
+      },
+      "liebe": {
+        "id": "liebe",
+        "name": "Liebe",
+        "icon": "❤️",
+        "origin": "Core",
+        "description": "Für eine geliebte Person",
         "boni": [
           {
             "typ": "Attribut",
             "ziel": "intuition",
             "wert": 1
           }
-        ],
-        "description": "Suche nach Familie oder Volk.",
-        "origin": "Core"
+        ]
       }
     }
   }
