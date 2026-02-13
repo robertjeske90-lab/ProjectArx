@@ -1,0 +1,99 @@
+{
+  "version": "1.0",
+  "description": "ARX Portrait Gallery - Vorgefertigte Charakterportraits",
+  
+  "categories": {
+    "human": {
+      "name": "Menschen",
+      "icon": "👤",
+      "portraits": [
+        { "id": "human_m_warrior_01", "file": "male_warrior_01.png", "tags": ["male", "warrior", "armor"] },
+        { "id": "human_m_warrior_02", "file": "male_warrior_02.png", "tags": ["male", "warrior", "helmet"] },
+        { "id": "human_m_mage_01", "file": "male_mage_01.png", "tags": ["male", "mage", "robe"] },
+        { "id": "human_m_rogue_01", "file": "male_rogue_01.png", "tags": ["male", "rogue", "hood"] },
+        { "id": "human_m_noble_01", "file": "male_noble_01.png", "tags": ["male", "noble", "fancy"] },
+        { "id": "human_f_warrior_01", "file": "female_warrior_01.png", "tags": ["female", "warrior", "armor"] },
+        { "id": "human_f_mage_01", "file": "female_mage_01.png", "tags": ["female", "mage", "robe"] },
+        { "id": "human_f_rogue_01", "file": "female_rogue_01.png", "tags": ["female", "rogue", "hood"] },
+        { "id": "human_f_noble_01", "file": "female_noble_01.png", "tags": ["female", "noble", "fancy"] },
+        { "id": "human_f_cleric_01", "file": "female_cleric_01.png", "tags": ["female", "cleric", "holy"] }
+      ]
+    },
+    
+    "elf": {
+      "name": "Elfen",
+      "icon": "🧝",
+      "portraits": [
+        { "id": "elf_m_archer_01", "file": "male_archer_01.png", "tags": ["male", "archer", "bow"] },
+        { "id": "elf_m_mage_01", "file": "male_mage_01.png", "tags": ["male", "mage", "elegant"] },
+        { "id": "elf_m_warrior_01", "file": "male_warrior_01.png", "tags": ["male", "warrior", "elven armor"] },
+        { "id": "elf_f_archer_01", "file": "female_archer_01.png", "tags": ["female", "archer", "bow"] },
+        { "id": "elf_f_mage_01", "file": "female_mage_01.png", "tags": ["female", "mage", "elegant"] },
+        { "id": "elf_f_druid_01", "file": "female_druid_01.png", "tags": ["female", "druid", "nature"] },
+        { "id": "darkelf_m_01", "file": "dark_male_01.png", "tags": ["male", "dark elf", "drow"] },
+        { "id": "darkelf_f_01", "file": "dark_female_01.png", "tags": ["female", "dark elf", "drow"] }
+      ]
+    },
+    
+    "dwarf": {
+      "name": "Zwerge",
+      "icon": "⛏️",
+      "portraits": [
+        { "id": "dwarf_m_warrior_01", "file": "male_warrior_01.png", "tags": ["male", "warrior", "beard"] },
+        { "id": "dwarf_m_smith_01", "file": "male_smith_01.png", "tags": ["male", "smith", "hammer"] },
+        { "id": "dwarf_m_cleric_01", "file": "male_cleric_01.png", "tags": ["male", "cleric", "beard"] },
+        { "id": "dwarf_f_warrior_01", "file": "female_warrior_01.png", "tags": ["female", "warrior", "axe"] },
+        { "id": "dwarf_f_runesmith_01", "file": "female_runesmith_01.png", "tags": ["female", "mage", "runes"] }
+      ]
+    },
+    
+    "orc": {
+      "name": "Orks & Goblins",
+      "icon": "👹",
+      "portraits": [
+        { "id": "orc_m_warrior_01", "file": "male_warrior_01.png", "tags": ["male", "warrior", "brutal"] },
+        { "id": "orc_m_shaman_01", "file": "male_shaman_01.png", "tags": ["male", "shaman", "tribal"] },
+        { "id": "orc_f_warrior_01", "file": "female_warrior_01.png", "tags": ["female", "warrior", "fierce"] },
+        { "id": "halforc_m_01", "file": "halforc_male_01.png", "tags": ["male", "half-orc", "civilized"] },
+        { "id": "goblin_m_01", "file": "goblin_male_01.png", "tags": ["male", "goblin", "sneaky"] }
+      ]
+    },
+    
+    "tiefling": {
+      "name": "Tieflinge & Aasimar",
+      "icon": "😈",
+      "portraits": [
+        { "id": "tiefling_m_warlock_01", "file": "male_warlock_01.png", "tags": ["male", "warlock", "horns"] },
+        { "id": "tiefling_m_rogue_01", "file": "male_rogue_01.png", "tags": ["male", "rogue", "tail"] },
+        { "id": "tiefling_f_mage_01", "file": "female_mage_01.png", "tags": ["female", "mage", "horns"] },
+        { "id": "tiefling_f_bard_01", "file": "female_bard_01.png", "tags": ["female", "bard", "charming"] },
+        { "id": "aasimar_m_paladin_01", "file": "aasimar_male_paladin_01.png", "tags": ["male", "paladin", "celestial"] },
+        { "id": "aasimar_f_cleric_01", "file": "aasimar_female_cleric_01.png", "tags": ["female", "cleric", "celestial"] }
+      ]
+    },
+    
+    "misc": {
+      "name": "Andere",
+      "icon": "✨",
+      "portraits": [
+        { "id": "dragonborn_m_01", "file": "dragonborn_male_01.png", "tags": ["male", "dragonborn", "scales"] },
+        { "id": "dragonborn_f_01", "file": "dragonborn_female_01.png", "tags": ["female", "dragonborn", "scales"] },
+        { "id": "catfolk_m_01", "file": "catfolk_male_01.png", "tags": ["male", "catfolk", "fur"] },
+        { "id": "catfolk_f_01", "file": "catfolk_female_01.png", "tags": ["female", "catfolk", "fur"] },
+        { "id": "wolfkin_m_01", "file": "wolfkin_male_01.png", "tags": ["male", "wolfkin", "fur"] },
+        { "id": "skeleton_01", "file": "skeleton_01.png", "tags": ["undead", "skeleton", "spooky"] },
+        { "id": "vampire_m_01", "file": "vampire_male_01.png", "tags": ["male", "vampire", "undead"] },
+        { "id": "vampire_f_01", "file": "vampire_female_01.png", "tags": ["female", "vampire", "undead"] }
+      ]
+    }
+  },
+  
+  "credits": {
+    "note": "Portraits sind Platzhalter. Ersetze sie mit echten CC-BY/CC0 Bildern.",
+    "sources": [
+      "https://opengameart.org",
+      "https://itch.io (CC-BY assets)",
+      "https://game-icons.net"
+    ]
+  }
+}

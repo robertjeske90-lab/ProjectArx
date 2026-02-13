@@ -1,0 +1,70 @@
+{
+  "version": "1.0",
+  "description": "ARX Music Library - BGM und Charakter-Themes",
+  
+  "categories": {
+    "themes": {
+      "name": "Charakter-Themes",
+      "description": "Persönliche Musik für deinen Charakter",
+      "tracks": [
+        { "id": "heroic_01", "file": "heroic_01.mp3", "name": "Heroisches Thema", "duration": 180, "mood": ["epic", "brave", "adventure"] },
+        { "id": "heroic_02", "file": "heroic_02.mp3", "name": "Ritter des Lichts", "duration": 195, "mood": ["noble", "paladin", "holy"] },
+        { "id": "mysterious_01", "file": "mysterious_01.mp3", "name": "Geheimnisvoller Wanderer", "duration": 210, "mood": ["mystery", "rogue", "shadow"] },
+        { "id": "mysterious_02", "file": "mysterious_02.mp3", "name": "Flüstern im Dunkel", "duration": 165, "mood": ["dark", "assassin", "stealth"] },
+        { "id": "arcane_01", "file": "arcane_01.mp3", "name": "Arkane Macht", "duration": 200, "mood": ["magic", "wizard", "ancient"] },
+        { "id": "arcane_02", "file": "arcane_02.mp3", "name": "Elementarer Sturm", "duration": 175, "mood": ["elemental", "power", "storm"] },
+        { "id": "nature_01", "file": "nature_01.mp3", "name": "Kind des Waldes", "duration": 220, "mood": ["druid", "nature", "peaceful"] },
+        { "id": "nature_02", "file": "nature_02.mp3", "name": "Wildes Herz", "duration": 185, "mood": ["ranger", "wild", "hunter"] },
+        { "id": "dark_01", "file": "dark_01.mp3", "name": "Schatten der Vergangenheit", "duration": 230, "mood": ["dark", "tragic", "revenge"] },
+        { "id": "dark_02", "file": "dark_02.mp3", "name": "Verlorene Seele", "duration": 195, "mood": ["warlock", "demon", "curse"] },
+        { "id": "noble_01", "file": "noble_01.mp3", "name": "Königliches Blut", "duration": 180, "mood": ["noble", "royal", "proud"] },
+        { "id": "tavern_01", "file": "tavern_bard_01.mp3", "name": "Fröhlicher Barde", "duration": 160, "mood": ["bard", "fun", "tavern"] },
+        { "id": "tribal_01", "file": "tribal_01.mp3", "name": "Kriegstrommeln", "duration": 175, "mood": ["barbarian", "tribal", "war"] },
+        { "id": "holy_01", "file": "holy_01.mp3", "name": "Göttliches Licht", "duration": 200, "mood": ["cleric", "divine", "healing"] },
+        { "id": "pirate_01", "file": "pirate_01.mp3", "name": "Segel am Horizont", "duration": 190, "mood": ["pirate", "sea", "adventure"] }
+      ]
+    },
+    
+    "ambient": {
+      "name": "Atmosphäre",
+      "description": "Hintergrundmusik für Szenen",
+      "tracks": [
+        { "id": "tavern_amb", "file": "tavern_ambient.mp3", "name": "Taverne", "duration": 300, "loop": true },
+        { "id": "forest_amb", "file": "forest_ambient.mp3", "name": "Wald", "duration": 300, "loop": true },
+        { "id": "dungeon_amb", "file": "dungeon_ambient.mp3", "name": "Kerker", "duration": 300, "loop": true },
+        { "id": "city_amb", "file": "city_ambient.mp3", "name": "Stadt", "duration": 300, "loop": true },
+        { "id": "castle_amb", "file": "castle_ambient.mp3", "name": "Schloss", "duration": 300, "loop": true },
+        { "id": "cave_amb", "file": "cave_ambient.mp3", "name": "Höhle", "duration": 300, "loop": true },
+        { "id": "ocean_amb", "file": "ocean_ambient.mp3", "name": "Meer", "duration": 300, "loop": true },
+        { "id": "mountain_amb", "file": "mountain_ambient.mp3", "name": "Berge", "duration": 300, "loop": true },
+        { "id": "desert_amb", "file": "desert_ambient.mp3", "name": "Wüste", "duration": 300, "loop": true },
+        { "id": "swamp_amb", "file": "swamp_ambient.mp3", "name": "Sumpf", "duration": 300, "loop": true }
+      ]
+    },
+    
+    "combat": {
+      "name": "Kampfmusik",
+      "description": "Für Kämpfe und Action",
+      "tracks": [
+        { "id": "battle_01", "file": "battle_01.mp3", "name": "Schwertklang", "duration": 180, "intensity": "medium" },
+        { "id": "battle_02", "file": "battle_02.mp3", "name": "Schlachtruf", "duration": 200, "intensity": "high" },
+        { "id": "battle_03", "file": "battle_03.mp3", "name": "Hinterhalt", "duration": 165, "intensity": "low" },
+        { "id": "boss_01", "file": "boss_01.mp3", "name": "Endgegner", "duration": 240, "intensity": "epic" },
+        { "id": "boss_02", "file": "boss_02.mp3", "name": "Drachenkampf", "duration": 270, "intensity": "epic" },
+        { "id": "victory", "file": "victory.mp3", "name": "Sieg!", "duration": 30, "intensity": "celebration" },
+        { "id": "defeat", "file": "defeat.mp3", "name": "Niederlage", "duration": 20, "intensity": "somber" }
+      ]
+    }
+  },
+  
+  "credits": {
+    "note": "Musik-Dateien sind Platzhalter. Ersetze sie mit echten CC-BY/CC0 Tracks.",
+    "recommended_sources": [
+      "https://opengameart.org/content/oga-by-30-faq (Music)",
+      "https://freepd.com",
+      "https://incompetech.com (Kevin MacLeod - CC-BY)",
+      "https://freemusicarchive.org"
+    ],
+    "license_requirement": "Bei CC-BY: Credit im Spiel erforderlich!"
+  }
+}

@@ -7,11 +7,14 @@ import SlideIntro from '../components/creator/SlideIntro';
 import SlideName from '../components/creator/SlideName';
 import SlideRace from '../components/creator/SlideRace';
 import SlidePhysical from '../components/creator/SlidePhysical';
+import SlideAvatar from '../components/creator/SlideAvatar';
+import SlideCosmetics from '../components/creator/SlideCosmetics';
 import SlideHomeland from '../components/creator/SlideHomeland';
 import SlideCulture from '../components/creator/SlideCulture';
 import SlideUpbringing from '../components/creator/SlideUpbringing';
 import SlideTraining from '../components/creator/SlideTraining';
 import SlideCalling from '../components/creator/SlideCalling';
+import SlideBackstory from '../components/creator/SlideBackstory';
 import SlideAlignment from '../components/creator/SlideAlignment';
 import SlideSummary from '../components/creator/SlideSummary';
 
@@ -20,12 +23,15 @@ const SLIDES = [
   { id: 'name', component: SlideName, title: 'Name' },
   { id: 'fatherRace', component: SlideRace, title: 'Vaters Rasse', props: { parent: 'father' } },
   { id: 'motherRace', component: SlideRace, title: 'Mutters Rasse', props: { parent: 'mother' } },
-  { id: 'physical', component: SlidePhysical, title: 'Körper' },  // NEU!
+  { id: 'physical', component: SlidePhysical, title: 'Körper' },
+  { id: 'avatar', component: SlideAvatar, title: 'Avatar' },
+  { id: 'cosmetics', component: SlideCosmetics, title: 'Merkmale' },
   { id: 'homeland', component: SlideHomeland, title: 'Heimat' },
   { id: 'culture', component: SlideCulture, title: 'Kultur' },
   { id: 'upbringing', component: SlideUpbringing, title: 'Erziehung' },
   { id: 'training', component: SlideTraining, title: 'Ausbildung' },
   { id: 'calling', component: SlideCalling, title: 'Aufbruch' },
+  { id: 'backstory', component: SlideBackstory, title: 'Geschichte' },
   { id: 'alignment', component: SlideAlignment, title: 'Gesinnung' },
   { id: 'summary', component: SlideSummary, title: 'Zusammenfassung' },
 ];
@@ -44,10 +50,22 @@ export default function CharacterCreatorSlideshow() {
     fatherName: '',
     motherRace: null,
     motherName: '',
-    // Physical - NEU!
+    // Physical
     age: null,
     height: null,
     stature: 0,
+    // Avatar
+    avatar: null,
+    // Cosmetics
+    cosmetics: {
+      title: 'none',
+      customTitle: '',
+      hairColor: 'brown',
+      eyeColor: 'brown',
+      skinFeatures: [],
+      distinctiveFeatures: [],
+      notes: ''
+    },
     // Rest
     homeland: null,
     homelandName: '',
@@ -56,7 +74,7 @@ export default function CharacterCreatorSlideshow() {
     training: null,
     calling: null,
     alignment: { moral: 0, order: 0, focus: 0 },
-    backstory: {},
+    backstory: '', // STRING, nicht Object!
     portrait: null,
     portraitPreview: null,
   });
@@ -243,11 +261,14 @@ export default function CharacterCreatorSlideshow() {
       case 'fatherRace': return characterData.fatherRace !== null;
       case 'motherRace': return characterData.motherRace !== null;
       case 'physical': return true; // Optional, defaults werden gesetzt
+      case 'avatar': return true; // Optional
+      case 'cosmetics': return true; // Optional
       case 'homeland': return characterData.homeland !== null;
       case 'culture': return characterData.culture !== null;
       case 'upbringing': return characterData.upbringing !== null;
       case 'training': return characterData.training !== null;
       case 'calling': return characterData.calling !== null;
+      case 'backstory': return true; // Optional
       case 'alignment': return true;
       case 'summary': return true;
       default: return true;
@@ -287,6 +308,8 @@ export default function CharacterCreatorSlideshow() {
           weight: weight,
           stature: characterData.stature,
         },
+        avatar: characterData.avatar,
+        cosmetics: characterData.cosmetics,
         alignment: characterData.alignment,
         backstory: characterData.backstory,
         attributes: stats.attributes,

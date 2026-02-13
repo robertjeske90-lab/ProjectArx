@@ -1,0 +1,193 @@
+{
+  "version": "9.0 - MINIMAL & FUNKTIONAL",
+  "note": "Nur verifizierte, funktionierende Pfade!",
+  
+  "animationFallback": ["walk", "slash", "hurt", "spellcast", "thrust", "shoot", "idle", "run", "combat_idle"],
+  
+  "categories": {
+    "body": {
+      "name": "Körper",
+      "order": 1,
+      "types": {
+        "male": { "name": "Männlich", "path": "body/bodies/male" },
+        "female": { "name": "Weiblich", "path": "body/bodies/female" },
+        "muscular": { "name": "Muskulös", "path": "body/bodies/muscular" },
+        "teen": { "name": "Jugendlich", "path": "body/bodies/teen" },
+        "pregnant": { "name": "Schwanger", "path": "body/bodies/pregnant" },
+        "skeleton": { "name": "Skelett", "path": "body/bodies/skeleton", "fixedVariant": "skeleton" },
+        "zombie": { "name": "Zombie", "path": "body/bodies/zombie", "fixedVariant": "zombie" }
+      },
+      "variants": {
+        "light": { "name": "Hell", "color": "#FFDBAC" },
+        "olive": { "name": "Oliv", "color": "#C68642" },
+        "brown": { "name": "Braun", "color": "#8D5524" },
+        "bronze": { "name": "Bronze", "color": "#CD853F" },
+        "taupe": { "name": "Taupe", "color": "#6B4423" },
+        "black": { "name": "Dunkel", "color": "#3D2314" },
+        "amber": { "name": "Bernstein", "color": "#FFBF00" },
+        "green": { "name": "Grün", "color": "#5D8233" },
+        "bright_green": { "name": "Hellgrün", "color": "#7CBA3D" },
+        "dark_green": { "name": "Dunkelgrün", "color": "#3D5229" },
+        "blue": { "name": "Blau", "color": "#5B7DB1" },
+        "lavender": { "name": "Lavendel", "color": "#B19CD9" }
+      }
+    },
+    
+    "head": {
+      "name": "Kopf",
+      "order": 2,
+      "types": {
+        "human_male": { "name": "Mensch (M)", "path": "head/heads/human/male" },
+        "human_female": { "name": "Mensch (W)", "path": "head/heads/human/female" },
+        "orc": { "name": "Ork", "path": "head/heads/orc/child", "yOffset": -4 },
+        "goblin": { "name": "Goblin", "path": "head/heads/goblin/adult" },
+        "skeleton": { "name": "Skelett", "path": "head/heads/skeleton/adult", "fixedVariant": "skeleton" },
+        "vampire": { "name": "Vampir", "path": "head/heads/vampire/adult" },
+        "lizard": { "name": "Echse", "path": "head/heads/lizard/child", "yOffset": -4 },
+        "wolf": { "name": "Wolf", "path": "head/heads/wolf/child", "yOffset": -4 },
+        "minotaur": { "name": "Minotaurus", "path": "head/heads/minotaur/child", "yOffset": -4 },
+        "troll": { "name": "Troll", "path": "head/heads/troll/adult" },
+        "boarman": { "name": "Ebermensch", "path": "head/heads/boarman/adult" }
+      },
+      "variants": "inherit_body"
+    },
+    
+    "hair": {
+      "name": "Haare",
+      "order": 3,
+      "optional": true,
+      "types": {
+        "none": { "name": "Keine", "path": null },
+        "afro": { "name": "Afro", "path": "hair/afro/adult" },
+        "balding": { "name": "Glatze werdend", "path": "hair/balding/adult" },
+        "bangs": { "name": "Pony", "path": "hair/bangs/adult" },
+        "bob": { "name": "Bob", "path": "hair/bob/adult" },
+        "buzzcut": { "name": "Buzzcut", "path": "hair/buzzcut/adult" },
+        "cornrows": { "name": "Cornrows", "path": "hair/cornrows/adult" },
+        "curly_long": { "name": "Lockig Lang", "path": "hair/curly_long/adult" },
+        "curly_short": { "name": "Lockig Kurz", "path": "hair/curly_short/adult" },
+        "dreadlocks_long": { "name": "Dreads", "path": "hair/dreadlocks_long/adult" },
+        "long": { "name": "Lang", "path": "hair/long/adult" },
+        "long_messy": { "name": "Lang Strubbelig", "path": "hair/long_messy/adult" },
+        "longhawk": { "name": "Irokese", "path": "hair/longhawk/adult" },
+        "messy1": { "name": "Strubbelig", "path": "hair/messy1/adult" },
+        "pixie": { "name": "Pixie", "path": "hair/pixie/adult" },
+        "pigtails": { "name": "Zöpfe", "path": "hair/pigtails/adult" },
+        "plain": { "name": "Schlicht", "path": "hair/plain/adult" },
+        "spiked": { "name": "Stachelig", "path": "hair/spiked/adult" }
+      },
+      "variants": {
+        "black": { "name": "Schwarz", "color": "#1C1C1C" },
+        "dark_brown": { "name": "Dunkelbraun", "color": "#4A3728" },
+        "light_brown": { "name": "Hellbraun", "color": "#8B7355" },
+        "blonde": { "name": "Blond", "color": "#D4A76A" },
+        "platinum": { "name": "Platinblond", "color": "#F4E3C1" },
+        "redhead": { "name": "Rot", "color": "#8B2500" },
+        "ginger": { "name": "Kupfer", "color": "#B87333" },
+        "gray": { "name": "Grau", "color": "#808080" },
+        "white": { "name": "Weiß", "color": "#F5F5F5" }
+      }
+    },
+    
+    "beards": {
+      "name": "Bart",
+      "order": 4,
+      "optional": true,
+      "types": {
+        "none": { "name": "Keiner", "path": null },
+        "5oclock_shadow": { "name": "Dreitagebart", "path": "beards/beard/5oclock_shadow" },
+        "basic": { "name": "Einfach", "path": "beards/beard/basic" },
+        "medium": { "name": "Mittel", "path": "beards/beard/medium" },
+        "trimmed": { "name": "Gestutzt", "path": "beards/beard/trimmed" }
+      },
+      "variants": "inherit_hair"
+    },
+    
+    "torso": {
+      "name": "Oberkörper",
+      "order": 5,
+      "optional": true,
+      "types": {
+        "none": { "name": "Nackt", "path": null },
+        "apron": { "name": "Schürze", "path": "torso/aprons/apron/male" },
+        "suspenders": { "name": "Hosenträger", "path": "torso/aprons/suspenders/male" },
+        "chainmail": { "name": "Kettenhemd", "path": "torso/chainmail/male", "fixedVariant": "gray" },
+        "blouse": { "name": "Bluse (W)", "path": "torso/clothes/blouse/female" }
+      },
+      "variants": {
+        "black": { "name": "Schwarz", "color": "#212121" },
+        "white": { "name": "Weiß", "color": "#F5F5F5" },
+        "brown": { "name": "Braun", "color": "#5D4037" },
+        "blue": { "name": "Blau", "color": "#1565C0" },
+        "red": { "name": "Rot", "color": "#C62828" },
+        "green": { "name": "Grün", "color": "#2E7D32" },
+        "gray": { "name": "Grau", "color": "#757575" },
+        "leather": { "name": "Leder", "color": "#8B4513" }
+      }
+    },
+    
+    "legs": {
+      "name": "Beine",
+      "order": 6,
+      "optional": true,
+      "types": {
+        "none": { "name": "Nackt", "path": null },
+        "pants": { "name": "Hose", "path": "legs/pants/male" }
+      },
+      "variants": "inherit_torso"
+    },
+    
+    "feet": {
+      "name": "Füße",
+      "order": 7,
+      "optional": true,
+      "types": {
+        "none": { "name": "Barfuß", "path": null },
+        "boots": { "name": "Stiefel", "path": "feet/boots/basic/male" }
+      },
+      "variants": "inherit_torso"
+    },
+    
+    "cape": {
+      "name": "Umhang",
+      "order": 8,
+      "optional": true,
+      "types": {
+        "none": { "name": "Keiner", "path": null },
+        "solid": { "name": "Einfarbig", "path": "cape/solid/male" }
+      },
+      "variants": "inherit_torso"
+    }
+  },
+  
+  "presets": {
+    "human_male": {
+      "name": "Mensch (M)",
+      "body": { "type": "male", "variant": "light" },
+      "head": { "type": "human_male", "variant": "light" },
+      "hair": { "type": "plain", "variant": "dark_brown" },
+      "torso": { "type": "suspenders", "variant": "brown" },
+      "legs": { "type": "pants", "variant": "brown" },
+      "feet": { "type": "boots", "variant": "brown" }
+    },
+    "human_female": {
+      "name": "Mensch (W)",
+      "body": { "type": "female", "variant": "light" },
+      "head": { "type": "human_female", "variant": "light" },
+      "hair": { "type": "long", "variant": "blonde" },
+      "torso": { "type": "blouse", "variant": "white" },
+      "feet": { "type": "boots", "variant": "brown" }
+    },
+    "orc": {
+      "name": "Ork",
+      "body": { "type": "muscular", "variant": "green" },
+      "head": { "type": "orc", "variant": "green" },
+      "hair": { "type": "longhawk", "variant": "black" }
+    },
+    "skeleton": {
+      "name": "Skelett",
+      "body": { "type": "skeleton", "variant": "light" },
+      "head": { "type": "skeleton", "variant": "light" }
+    }
+  }
+}
